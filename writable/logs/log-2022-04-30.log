@@ -1,0 +1,24 @@
+CRITICAL - 2022-04-30 11:06:38 --> Undefined variable: id
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Views\ordersView.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 2, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\Users\\Marina...')
+#2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('ordersView', Array, true)
+#4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(67): view('ordersView', Array)
+#5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#10 {main}
+CRITICAL - 2022-04-30 11:07:05 --> Undefined variable: orders
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Views\ordersView.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\Users\\Marina...')
+#2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('ordersView', Array, true)
+#4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(67): view('ordersView', Array)
+#5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#10 {main}

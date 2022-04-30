@@ -1,0 +1,492 @@
+CRITICAL - 2022-04-29 12:23:09 --> Undefined index: email
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/aluno/\xC3\x81r...', 278, Array)
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->loginUser()
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#6 {main}
+CRITICAL - 2022-04-29 12:23:33 --> Undefined index: email
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/aluno/\xC3\x81r...', 278, Array)
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->loginUser()
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#6 {main}
+CRITICAL - 2022-04-29 12:27:20 --> Undefined variable: data
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Views/insertOrderView.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/aluno/\xC3\x81r...', 12, Array)
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(210): include('/home/aluno/\xC3\x81r...')
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('insertOrderView', Array, true)
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(64): view('insertOrderView', Array)
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->insertOrder()
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#10 {main}
+CRITICAL - 2022-04-29 12:29:23 --> Invalid file: login.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('login', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('login')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:52 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:30:08 --> Invalid file: adminview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminview.php')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 12:30:25 --> Invalid file: adminsession.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:19:26 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:24 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:25 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:25 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:25 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:25 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:26 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:26 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:26 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:22:26 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:31 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:31 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:31 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:31 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:32 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:33 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:34 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:34 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 13:23:34 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 14:20:14 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 14:20:55 --> Invalid file: clientesview.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientesview.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesview', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesview')
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#8 {main}
+CRITICAL - 2022-04-29 14:21:19 --> Undefined variable: customers
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Views/clientesView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/aluno/\xC3\x81r...', 25, Array)
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(210): include('/home/aluno/\xC3\x81r...')
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesView', Array, true)
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesView')
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#10 {main}
+CRITICAL - 2022-04-29 14:21:20 --> Undefined variable: customers
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Views/clientesView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/aluno/\xC3\x81r...', 25, Array)
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(210): include('/home/aluno/\xC3\x81r...')
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('clientesView', Array, true)
+#4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(45): view('clientesView')
+#5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->clientesview()
+#6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
+#10 {main}
