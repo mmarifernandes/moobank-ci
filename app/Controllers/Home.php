@@ -58,9 +58,19 @@ class Home extends BaseController
 
 	public function ordersview()
 	{
+
+		  
+        $customers_model = new CustomersModel();
 		$orders_model = new OrdersModel();
+        $data_customers = $customers_model->getData2();
         $data_orders = $orders_model->getData();
+              		$orders_model2 = new OrdersModel();
+          $data_orders2 = $orders_model2->getTotal();
+
+        $data_all['customers'] = $data_customers;
         $data_all['orders'] = $data_orders;
+		        $data_all['total'] = $data_orders2;
+
 
 		echo view ('common/headerUser');
 		echo view ('ordersView', $data_all);
@@ -216,7 +226,7 @@ class Home extends BaseController
 				
 				'categoria' => $this->request->getVar('categoria'),
 
-				'qnt' => $this->request->getVar('qnt'),
+				'quantidade' => $this->request->getVar('qnt'),
 
 				'preco' => $this->request->getVar('preco'),
 

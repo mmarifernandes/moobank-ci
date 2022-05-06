@@ -16,6 +16,21 @@ class CustomersModel extends Model {
         return $this->asArray()->where(['email' => $email])->first();
     }
 
+
+        public function getData2($email = null){
+        if ($email == null){
+            $this->select('*');
+            $this->join('clientes-produtos', 'clientes.email = clientes-produtos.email', 'inner');
+            $this->groupBy('clientes.email'); // Produces: GROUP BY title
+            // $this->order_by('1');  # or desc
+
+            return $this->findAll();
+        }
+        
+        // return $this->asArray()->where(['emai' => $idproduto])->first();
+
+    }
+
     public function insert_data_login($data)
     {            
         return $this->insert($data);

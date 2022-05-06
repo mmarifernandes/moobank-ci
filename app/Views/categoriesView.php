@@ -8,14 +8,16 @@
 </head>
 <body>
  
-  <table class="table">
+
+<h1>Lista de Categorias</h1>
+  <table style="background-color: rgb(178, 133, 204); width: 50%" class="table">
     <thead>
         <tr>
         <!-- <th scope="col">#</th> -->
         <th scope="col">ID</th>
         <th scope="col">Nome</th>
-        <th scope="col"><th>
-        <th scope="col"><th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     
 
     </tr>

@@ -8,9 +8,10 @@
 </head>
 <body>
 
+<h1>Lista de Clientes</h1>
 
-<table class="table">
-  <thead class="thead-light">
+<table style="background-color: rgb(178, 133, 204);" class="table">
+  <thead>
     <tr>
       <th scope="col">Name</th>
       <th scope="col">E-mail</th>
@@ -27,7 +28,7 @@
 <?php
     foreach ($customers as $customer){
         if ($customer['Nome']=='Admin') continue;
-        echo "<tr class=\"table-light\">
+        echo "<tr>
         <td>".$customer['Nome']."</td>
         <td>".$customer['Email']."</td>
         <td>".$customer['Cidade']."</td>";

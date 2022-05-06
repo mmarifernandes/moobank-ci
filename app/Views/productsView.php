@@ -7,8 +7,9 @@
   <title>Document</title>
 </head>
 <body>
- 
-  <table class="table">
+ <h1>Lista de Produtos</h1>
+
+  <table style="background-color: rgb(178, 133, 204);" class="table">
     <thead>
         <tr>
         <!-- <th scope="col">#</th> -->
@@ -33,7 +34,7 @@
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
       echo "<td>".$row['quantidade']."</td>";   
-      echo "<td>".$row['preco']."</td>";    
+      echo "<td>R$".$row['preco']."</td>";    
       echo "<td>".$row['categoria']."</td>";    
       echo "<td>".$row['console']."</td>";    
 

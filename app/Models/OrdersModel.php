@@ -20,6 +20,18 @@ class OrdersModel extends Model {
 
     }
 
+        public function getTotal($idproduto = null){
+        if ($idproduto == null){
+            $this->select('*,  sum(preco) as total, produtos.nome as nome');
+            $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
+                        $this->groupBy('clientes-produtos.email'); // Produces: GROUP BY title
+
+            return $this->findAll();
+        }
+    }
+
+
+
     public function insert_order($data)
     {            
         return $this->insert($data);

@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: rgb(136, 100, 156);
+  background-color: rgb(153, 111, 175);
 }
 
 
@@ -21,11 +21,11 @@ body{
 }
 
 .w3-card.w3-container{
-  background-color: aliceblue;
+  background-color: rgb(178, 133, 204);
   
 }
 .w3-card.w3-container:hover {
-background-color: rgb(223, 255, 83);
+background-color: rgb(128, 209, 104);
 border-radius: 17px;
 color:rgb(81, 6, 124);
 }
@@ -37,3 +37,4 @@ a:link {
 a{
   text-decoration: none;
 }
+
