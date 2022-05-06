@@ -10,13 +10,11 @@
  
   <table class="table">
     <thead>
-      <tr>
+        <tr>
         <!-- <th scope="col">#</th> -->
-      <th scope="col">Id Produto</th>
-      <th scope="col">Produto</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Cliente</th>
-      <th scope="col"><th>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col"><th>
         <th scope="col"><th>
     
 
@@ -25,21 +23,19 @@
   
   <tbody>
     <?php 
-    foreach ($orders as $row){
-      echo "<tr> <td>".$row['idproduto']."</td>";
+    foreach ($categories as $row){
+      echo "<tr> <td>".$row['id']."</td>";
       echo "<td>".$row['nome']."</td>";
-      echo "<td>".$row['tipo']."</td>";
-      echo "<td>".$row['email']."</td>";    
    
 ?>
 
 <td>
 
 
-    <a href="<?php echo base_url('edit/'.$row['idproduto']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('edit/'.$row['id']);?>" class="btn btn-info">Edit</a>
     </td>
 <td>
-    <a href="<?php echo base_url('delete/'.$row['idproduto']);?>" class="btn btn-danger">Delete</a>
+    <a href="<?php echo base_url('delete/'.$row['id']);?>" class="btn btn-danger">Delete</a>
     
    </td></tr>
     

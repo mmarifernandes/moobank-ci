@@ -5,12 +5,35 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: rgb(136, 100, 156);
+}
 
 
 .container{
-  width: 45%;
+  width: 70%;
+    text-decoration: none;
+
 }
 
-.w3-third{
+.w3-quarter{
   margin-bottom: 10px;
+}
+
+.w3-card.w3-container{
+  background-color: aliceblue;
+  
+}
+.w3-card.w3-container:hover {
+background-color: rgb(223, 255, 83);
+border-radius: 17px;
+color:rgb(81, 6, 124);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
 }

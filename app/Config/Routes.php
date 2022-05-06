@@ -31,21 +31,24 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->add('registration', 'Home::registration');
 $routes->add('registrationcliente', 'Home::registrationcliente');
 $routes->add('registrationproduto', 'Home::registrationproduto');
+$routes->add('registrationcategory', 'Home::registrationcategory');
 
-$routes->add('insertdata', 'Home::insertData');
+$routes->add('insertdata', 'Home::insertData'); //insert cliente
 $routes->add('insertproduct', 'Home::insertProduct');
+$routes->add('insertformorder','Home::insertOrder');
+$routes->add('insertordertodb','Home::insertOrderToDB');
+$routes->add('insertcategory','Home::insertcategory');
 $routes->add('clientesview', 'Home::clientesView');
 $routes->add('ordersview', 'Home::ordersView');
+$routes->add('productsview', 'Home::productsView');
+$routes->add('categoriesview', 'Home::categoriesView');
 
 $routes->add('customersession','Home::customerSession');
 $routes->add('logout','Home::logout');
 $routes->add('edit/(:num)','Home::editOrder/$1');
 $routes->add('editorder/(:num)','Home::editOrderToDB/$1');
-$routes->add('insertformorder','Home::insertOrder');
-$routes->add('insertordertodb','Home::insertOrderToDB');
 $routes->add('delete/(:num)','Home::removeOrder/$1');
 $routes->add('adminsession', 'Admin::adminSession');
 

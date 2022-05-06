@@ -15,6 +15,9 @@
       <th scope="col">Name</th>
       <th scope="col">E-mail</th>
       <th scope="col">Cidade</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+
      
 
     </tr>
@@ -27,12 +30,26 @@
         echo "<tr class=\"table-light\">
         <td>".$customer['Nome']."</td>
         <td>".$customer['Email']."</td>
-        <td>".$customer['Cidade']."</td></tr>";
+        <td>".$customer['Cidade']."</td>";
 
         
-    }
+    
 ?>
 
+<td>
+
+
+    <a href="<?php echo base_url('edit/'.$customer['Email']);?>" class="btn btn-info">Edit</a>
+    </td>
+<td>
+    <a href="<?php echo base_url('delete/'.$customer['Email']);?>" class="btn btn-danger">Delete</a>
+    
+   </td></tr>
+
+
+       <?php
+    }// foreach
+    ?>
 </table>
     
 </body>

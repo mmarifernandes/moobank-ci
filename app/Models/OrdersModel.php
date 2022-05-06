@@ -9,11 +9,15 @@ class OrdersModel extends Model {
     protected $primaryKey = ['email', 'idproduto'];
     protected $allowedFields = [ 'email', 'idproduto'];
 
-    public function getData($id = null){
-        if ($id == null){
+    public function getData($idproduto = null){
+        if ($idproduto == null){
+            $this->select('*, produtos.nome as nome');
+            $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
             return $this->findAll();
         }
-        return $this->asArray()->where(['idproduto' => $id])->first();
+        
+        return $this->asArray()->where(['idproduto' => $idproduto])->first();
+
     }
 
     public function insert_order($data)

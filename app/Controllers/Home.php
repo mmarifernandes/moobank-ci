@@ -3,6 +3,8 @@ use CodeIgniter\Controller;
 use App\Models\CustomersModel;
 use App\Models\OrdersModel;
 use App\Models\ProductsModel;
+use App\Models\CategoriesModel;
+
 
 class Home extends BaseController
 {
@@ -15,10 +17,10 @@ class Home extends BaseController
 	}
 
 
-	public function registration()
+	public function registrationcategory()
 	{
-		echo view ('common/headerRegister');
-		echo view ('formRegister');
+		echo view ('common/headerUser');
+		echo view ('formRegisterCategory');
 		echo view ('common/footer');
 	}
 
@@ -56,18 +58,41 @@ class Home extends BaseController
 
 	public function ordersview()
 	{
-		$customers_model = new CustomersModel();
-        $data_customers = $customers_model->getData();
-        // $data_orders = $orders_model->getData();
-        // $data = $this->session->get();
-        // $data_all['orders'] = $data_orders;
-        $data_all['customers'] = $data_customers;
+		$orders_model = new OrdersModel();
+        $data_orders = $orders_model->getData();
+        $data_all['orders'] = $data_orders;
 
 		echo view ('common/headerUser');
 		echo view ('ordersView', $data_all);
 		echo view ('common/footer');
 
 	}
+
+		public function productsview()
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData();
+        $data_all['products'] = $data_products;
+
+		echo view ('common/headerUser');
+		echo view ('productsView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+		public function categoriesview()
+	{
+		$categories_model = new CategoriesModel();
+        $data_categories = $categories_model->getData();
+        $data_all['categories'] = $data_categories;
+
+		echo view ('common/headerUser');
+		echo view ('categoriesView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+
 
 
 	public function customerSession(){
@@ -199,6 +224,37 @@ class Home extends BaseController
 			
 
 			$products_model->insert_products($data);
+			return redirect()->to('/adminsession');
+			
+		// }
+		// else{
+			// $this->insertOrder($customer_id);	
+					
+		// }
+	}
+
+
+	public function insertCategory(){
+
+
+		// $rules = [
+		// 	'description' => 'required|min_length[3]|max_length[255]',
+		// 	'amount' => 'required', 
+		// ];// revisar
+
+		$categories_model = new CategoriesModel();
+
+		// if ($this->validate($rules)){
+			$data = array(
+
+				'id' =>  '',
+
+				'nome' => $this->request->getVar('nome'),
+
+			);
+			
+
+			$categories_model->insert_categories($data);
 			return redirect()->to('/adminsession');
 			
 		// }

@@ -26,9 +26,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="<?php echo base_url('adminsession');?>">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="<?php echo base_url('');?>">Categorias <span class="sr-only">(current)</span></a>
-          </li>
           </div>
         </div>
 

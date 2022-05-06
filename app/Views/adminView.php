@@ -17,68 +17,103 @@
 
 <div class="container">
 <div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/registrationcliente">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/registrationcliente">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
    Cadastrar Cliente
-</a></h3><br>
+</h3><br>
   <i class="fas fa-user-cog w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Built-in responsiveness</p>
  
   </div>
+  </a>
 </div>
 
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/registrationproduto">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/registrationproduto">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
 Cadastrar Produtos
-</a></h3><br>
+</h3><br>
   <i class="fas fa-tags w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Standard CSS only</p>
 
   </div>
+  </a>
 </div>
 
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/insertformorder">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/insertformorder">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
 Fazer Compra
-</a></h3><br>
+</h3><br>
   <i class="fas fa-shopping-bag w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Paper like design</p>
  
   </div>
+  </a>
 </div>
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/registrationcliente">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/registrationcategory">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
    Cadastrar Categorias
-</a></h3><br>
+</h3><br>
   <i class="far fa-folder-open w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Built-in responsiveness</p>
 
   </div>
+  </a>
 </div>
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/clientesview">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/clientesview">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
 Ver Clientes
-</a></h3><br>
+</h3><br>
   <i class="fas fa-users w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Built-in responsiveness</p>
  
   </div>
+  </a>
 </div>
 
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:300px; width: 200px; border-radius: 17px">
-  <h3 style="margin: 20px 0;"><a href="<?php echo base_url()?>/ordersview">
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/ordersview">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
 Ver Compras
-</a></h3><br>
+</h3><br>
   <i class="fas fa-shopping-cart w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   <p>Built-in responsiveness</p>
  
   </div>
+  
+</div>
+
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/productsview">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <h3 style="margin: 20px 0;">
+Ver Produtos
+</h3><br>
+  <i class="fas fa-shopping-cart w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
+  <p>Built-in responsiveness</p>
+ 
+  </div>
+</a>
+</div>
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/categoriesview">
+  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+    <h3 style="margin: 20px 0;">Ver Categorias</h3><br>
+    <i class="fas fa-shopping-cart w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
+    <p>Built-in responsiveness</p>
+    
+  </div>
+</a>
 </div>
 </div>
 </div>
@@ -89,6 +124,7 @@ Ver Compras
 
 
 
+</a>
 </body>
 </html>
 
