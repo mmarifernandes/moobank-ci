@@ -131,10 +131,10 @@ class Home extends BaseController
 		echo view ('common/footer');
 	}
 
-	public function editOrder($id){
+	public function editOrder($idorder){
 		$orders_model = new OrdersModel();
-		$result = $orders_model->getData($id);
-		$data = $result;
+		$result = $orders_model->getData($idorder);
+		$data['orders'] = $result;
 		
 		echo view ('common/headerUser');
 		echo view ('editOrderView',$data);
@@ -142,35 +142,34 @@ class Home extends BaseController
 	}
 
 
-	public function editOrderToDB($id){
-		$rules = [
-			'description' => 'required|min_length[3]|max_length[255]',
-			'amount' => 'required', 
-		];// revisar
-
+	public function editOrderToDB($idorder){
+		// $rules = [
+		// 	'description' => 'required|min_length[3]|max_length[255]',
+		// 	'amount' => 'required', 
+		// ];
 		$orders_model = new OrdersModel();
 
-		if ($this->validate($rules)){
+		// if ($this->validate($rules)){
 			$data = array(
 
-				'customer_id' =>  $this->request->getVar('customerIDform'),
-
-				'description' => $this->request->getVar('description'),
-				
-				'amount' => $this->request->getVar('amount'),
-
+				'email' => $this->request->getVar('customerIDform'),
+				'quantidade' => $this->request->getVar('qnt'),
 
 			);
 			
-
-			$orders_model->update_order($id, $data);
- 			return redirect()->to(base_url('customersession'));
+			print_r($data);
+			print_r($idorder);
+			// $email = $data['customer_id'];
+			// print_r($email);
+			$result = $orders_model->update_order($idorder, $data);
 			
-		}
-		else{
-			$this->editOrder($id);	
+ 			return redirect()->to(base_url('adminsession'));
+			
+		// }
+		// else{
+			// $this->editOrder($idproduto);	
 					
-		}
+		// }
 
 	}
 
@@ -189,6 +188,8 @@ class Home extends BaseController
 
 				'email' =>  $this->request->getVar('clientes'),
 				'idproduto' => $this->request->getVar('produtos'),
+				'quantidade' => $this->request->getVar('qnt'),
+
 
 
 			);

@@ -36,7 +36,7 @@
     }
 ?>
 </select>
-
+<br>
 <label for="produtos">Selecione o produto: </label>
 <select name="produtos" id="produtos">
   <?php
@@ -45,7 +45,14 @@
     }
 ?>
 </select>
+<br>
 
+  <div class="form-group">
+          <div class="col-md-4 mb-3">
+            <label for="quantidade">Quantidade</label>
+            <input type="text" class="form-control" id="quantidade" name="qnt">
+          </div>
+        </div>
 
         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>

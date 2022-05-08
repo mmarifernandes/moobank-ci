@@ -13,6 +13,10 @@
 <table style="text-align: left; border-collapse: collapse !important;" class="table">
   <tbody>
 <?php
+      // print_r($orders);
+      // echo '<br>';
+      // print_r($customers);
+
     foreach ($customers as $customer){
         echo "<tr><td style='padding: 0; text-align: left'><h3>".$customer['Nome']."</h3></td></tr>";
 ?>
@@ -28,6 +32,7 @@
       <th scope="col">Id Produto</th>
       <th scope="col">Produto</th>
       <th scope="col">Tipo</th>
+            <th scope="col">Quantidade</th>
       <th scope="col">Preço</th>
       <th scope="col"></th>
         <th scope="col"></th>
@@ -36,11 +41,14 @@
   
   <tbody>
     <?php 
+            // print_r($total);
+
     foreach ($orders as $row){
       if ($row['email'] !== $customer['Email']) continue;
       echo "<tr> <td>".$row['idproduto']."</td>";
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
+      echo "<td>".$row['qnt']."</td>";
       echo "<td>R$".$row['preco']."</td>";
       
       
@@ -49,10 +57,10 @@
 <td>
 
 
-    <a href="<?php echo base_url('edit/'.$row['idproduto']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('edit/'.$row['idorder']);?>" class="btn btn-info">Edit</a>
     </td>
 <td>
-    <a href="<?php echo base_url('delete/'.$row['idproduto']);?>" class="btn btn-danger">Delete</a>
+    <a href="<?php echo base_url('delete/'.$row['idorder']);?>" class="btn btn-danger">Delete</a>
     
    </td></tr>
     
@@ -62,7 +70,7 @@
 
     foreach ($total as $row){
       if ($row['email'] !== $customer['Email']) continue;
-      echo "<tr> <td></td><td></td><td></td><td></td><td></td><td style='font-weight: bold; font-size: 20px;'>Total: R$".$row['total']."</td>";
+      echo "<tr style='background-color: rgb(195, 143, 223);'> <td></td><td></td><td></td><td></td><td></td><td></td><td style='font-weight: bold; font-size: 20px;'>Total: R$".$row['total']."</td>";
 
       
     }

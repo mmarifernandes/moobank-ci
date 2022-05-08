@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    font-family: 'Roboto', sans-serif;}
 .bg-light {
     background-color: rgb(122, 79, 145) !important;
 }
 body{
-    background-color: rgb(153, 111, 175);
+    background-color: rgb(231, 231, 231);
     text-align: center;
 }
 h1{
@@ -32,4 +30,8 @@ h1{
 h3{
     margin-left: 11%;
     margin-top: 3%;
+}
+
+.col-md-4{
+    margin: auto;
 }

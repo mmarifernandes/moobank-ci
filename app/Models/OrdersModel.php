@@ -6,23 +6,25 @@ use CodeIgniter\Model;
 class OrdersModel extends Model {
 
     protected $table = 'clientes-produtos';
-    protected $primaryKey = ['email', 'idproduto'];
-    protected $allowedFields = [ 'email', 'idproduto'];
+    protected $primaryKey = ['idorder'];
+    protected $allowedFields = [ 'email', 'idproduto', 'quantidade', 'idproduto'];
 
-    public function getData($idproduto = null){
-        if ($idproduto == null){
-            $this->select('*, produtos.nome as nome');
+    public function getData($idorder = null){
+        if ($idorder == null){
+            $this->select('*, `clientes-produtos`.quantidade as qnt, produtos.nome as nome');
             $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
             return $this->findAll();
         }
-        
-        return $this->asArray()->where(['idproduto' => $idproduto])->first();
+                    $this->select('*, `clientes-produtos`.quantidade as qnt, produtos.nome as nome');
 
+                    $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
+
+        return $this->asArray()->where(['idorder' => $idorder])->first();
     }
 
-        public function getTotal($idproduto = null){
-        if ($idproduto == null){
-            $this->select('*,  sum(preco) as total, produtos.nome as nome');
+        public function getTotal($idorder = null){
+        if ($idorder == null){
+            $this->select('*, sum((preco*`clientes-produtos`.quantidade)) as total, produtos.nome as nome');
             $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
                         $this->groupBy('clientes-produtos.email'); // Produces: GROUP BY title
 
@@ -37,9 +39,10 @@ class OrdersModel extends Model {
         return $this->insert($data);
     }
 
-    public function update_order($id,$data)
-    {
-        return $this->update($id, $data);
+    public function update_order($idorder, $data){
+        $this->set('quantidade', $data['quantidade']);
+        $this->where('idorder', $idorder);
+       $this->update(`clientes-produtos`, $data);
     }
 
     // public function getOrdersbyCustomer($customer_id){
