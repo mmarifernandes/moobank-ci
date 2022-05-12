@@ -16,6 +16,19 @@ class ProductsModel extends Model {
         return $this->asArray()->where(['id' => $id])->first();
     }
 
+    
+    public function getData2($string = null){
+
+            $LastName = $this->input->getPost('search');
+            print_r($LastName);
+        if ($string == null){
+            return $this->findAll();
+        }
+        echo 'asadads';
+        return $this->asArray()->like('nome', $string)->findAll();
+    }
+
+
     public function insert_products($data)
     {            
         return $this->insert($data);

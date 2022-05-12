@@ -45,8 +45,7 @@ $routes->add('ordersview', 'Home::ordersView');
 $routes->add('productsview', 'Home::productsView');
 $routes->add('categoriesview', 'Home::categoriesView');
 
-$routes->add('customersession','Home::customerSession');
-$routes->add('logout','Home::logout');
+
 $routes->add('edit/(:num)','Home::editOrder/$1');
 $routes->add('editorder/(:num)','Home::editOrderToDB/$1');
 $routes->add('editc/(:any)','Home::editCliente/$1');
@@ -55,6 +54,10 @@ $routes->add('editp/(:any)','Home::editProduto/$1');
 $routes->add('editproduto/(:any)','Home::editProdutoToDB/$1');
 $routes->add('editca/(:any)','Home::editCategoria/$1');
 $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
+
+// $routes->add('deletep/(:num)','Home::removeProduct/$1');
+$routes->add('searchp','Home::searchProduct/$1');
+// $routes->add('productsview/(:any)', 'Home::searchProduct/$1');
 
 
 $routes->add('deletep/(:num)','Home::removeProduct/$1');

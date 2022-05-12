@@ -69,7 +69,7 @@ class Home extends BaseController
 
         $data_all['customers'] = $data_customers;
         $data_all['orders'] = $data_orders;
-		        $data_all['total'] = $data_orders2;
+		$data_all['total'] = $data_orders2;
 
 
 		echo view ('common/headerUser');
@@ -83,7 +83,7 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData();
         $data_all['products'] = $data_products;
-
+		print_r($data_all);
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
 		echo view ('common/footer');
@@ -217,6 +217,20 @@ class Home extends BaseController
 		// }
 
 	}
+
+
+	public function searchProduct($string){
+		$products_model = new ProductsModel();
+		$result = $products_model->getData2($string);
+		$data['products'] = $result;
+
+		// print_r($data);
+		
+		echo view ('common/headerUser');
+		echo view ('productsView',$data);
+		echo view ('common/footer');
+	}
+
 
 
 
