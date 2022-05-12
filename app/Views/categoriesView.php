@@ -34,10 +34,10 @@
 <td>
 
 
-    <a href="<?php echo base_url('edit/'.$row['id']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('editca/'.$row['id']);?>" class="btn btn-info">Edit</a>
     </td>
 <td>
-    <a href="<?php echo base_url('delete/'.$row['id']);?>" class="btn btn-danger">Delete</a>
+    <a href="<?php echo base_url('deleteca/'.$row['id']);?>" class="btn btn-danger">Delete</a>
     
    </td></tr>
     

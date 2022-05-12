@@ -39,6 +39,32 @@ class CustomersModel extends Model {
     public function checkUserPassword($data){
         return $this->where(['email' => $data['email'], 'senha' => $data['senha']])->first();
     }
+
+
+
+    public function update_customer($email, $data){
+        $this->set('email', $data['email']);
+        $this->where('email', $data['emailantigo']);
+        return $this->update(`clientes-produtos`, $data);
+        
+        
+        
+                    $this->set('Email', $data['email']);
+                    $this->set('Nome', $data['nome']);
+                    $this->set('Cidade', $data['cidade']);
+            
+                    $this->where('Email', $data['emailantigo']);
+                   return $this->update(`clientes`, $data);
+
+    }
+
+
+        public function removeCustomer($email = null){
+        if ($email!= null){
+            $this->where('Email', $email);
+            $this->delete();
+        }
+    }
 }
 
 ?>

@@ -40,10 +40,10 @@
 <td>
 
 
-    <a href="<?php echo base_url('edit/'.$customer['Email']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('editc/'.$customer['Email']);?>" class="btn btn-info">Edit</a>
     </td>
 <td>
-    <a href="<?php echo base_url('delete/'.$customer['Email']);?>" class="btn btn-danger">Delete</a>
+    <a href="<?php echo base_url('deletec/'.$customer['Email']);?>" class="btn btn-danger">Delete</a>
     
    </td></tr>
 

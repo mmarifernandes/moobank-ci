@@ -49,6 +49,17 @@ $routes->add('customersession','Home::customerSession');
 $routes->add('logout','Home::logout');
 $routes->add('edit/(:num)','Home::editOrder/$1');
 $routes->add('editorder/(:num)','Home::editOrderToDB/$1');
+$routes->add('editc/(:any)','Home::editCliente/$1');
+$routes->add('editcliente/(:any)','Home::editClienteToDB/$1');
+$routes->add('editp/(:any)','Home::editProduto/$1');
+$routes->add('editproduto/(:any)','Home::editProdutoToDB/$1');
+$routes->add('editca/(:any)','Home::editCategoria/$1');
+$routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
+
+
+$routes->add('deletep/(:num)','Home::removeProduct/$1');
+$routes->add('deletec/(:any)','Home::removeCliente/$1');
+$routes->add('deleteca/(:any)','Home::removeCategoria/$1');
 $routes->add('delete/(:num)','Home::removeOrder/$1');
 $routes->add('adminsession', 'Admin::adminSession');
 

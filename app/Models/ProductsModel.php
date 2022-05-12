@@ -21,20 +21,30 @@ class ProductsModel extends Model {
         return $this->insert($data);
     }
 
-    public function update_products($id,$data)
+    public function update_product($id,$data)
     {
-        return $this->update($id, $data);
+       
+        
+        $this->set('nome', $data['nome']);
+        $this->set('tipo', $data['tipo']);
+        $this->set('quantidade', $data['quantidade']);
+        $this->set('preco', $data['preco']);
+
+                    $this->where('id', $id);
+                   return $this->update(`produtos`, $data);
+
     }
 
     // public function getproductssbyCustomer($customer_id){
     //     return $this->asArray()->where(['customer_id'=> $customer_id])->findAll();
     // }
 
-    // public function removeproducts($id = null){
-    //     if ($id != null){
-    //         $this->delete($id);
-    //     }
-    // }
+    public function removeProduct($id = null){
+        if ($id!= null){
+            $this->where('id', $id);
+            $this->delete();
+        }
+    }
 
 }
 

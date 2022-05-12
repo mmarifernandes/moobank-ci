@@ -27,7 +27,6 @@ body{
 }
 .w3-card.w3-container:hover {
 background-color: rgb(128, 209, 104);
-border-radius: 17px;
 color:rgb(81, 6, 124);
 }
 

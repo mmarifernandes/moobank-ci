@@ -6,7 +6,7 @@
 <?php
 }
 
-print_r($orders)
+// print_r($orders)
 ?>
 
 <form action="<?php echo base_url('editorder/'.$orders['idorder']);?>" method="post">

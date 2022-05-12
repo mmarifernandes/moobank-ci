@@ -173,6 +173,140 @@ class Home extends BaseController
 
 	}
 
+
+
+	public function editCliente($email){
+		$customers_model = new CustomersModel();
+		$result = $customers_model->getData($email);
+		$data['clientes'] = $result;
+
+		// print_r($result);
+		
+		echo view ('common/headerUser');
+		echo view ('editClienteView',$data);
+		echo view ('common/footer');
+	}
+
+
+	public function editClienteToDB($email){
+		// $rules = [
+		// 	'description' => 'required|min_length[3]|max_length[255]',
+		// 	'amount' => 'required', 
+		// ];
+		$customers_model = new CustomersModel();
+
+		// if ($this->validate($rules)){
+			$data = array(
+
+				'email' => $this->request->getVar('email'),
+				'nome' => $this->request->getVar('nome'),
+				'cidade' => $this->request->getVar('cidade'),
+				'emailantigo' => $this->request->getVar('customerIDform'),
+
+
+			);
+
+			$result = $customers_model->update_customer($email, $data);
+			
+ 			return redirect()->to(base_url('adminsession'));
+			
+		// }
+		// else{
+			// $this->editOrder($idproduto);	
+					
+		// }
+
+	}
+
+
+
+	
+	public function editProduto($id){
+		$products_model = new ProductsModel();
+		$result = $products_model->getData($id);
+		$data['produtos'] = $result;
+
+		// print_r($result);
+		
+		echo view ('common/headerUser');
+		echo view ('editProductsView',$data);
+		echo view ('common/footer');
+	}
+
+
+	public function editProdutoToDB($id){
+		// $rules = [
+		// 	'description' => 'required|min_length[3]|max_length[255]',
+		// 	'amount' => 'required', 
+		// ];
+		$products_model = new ProductsModel();
+
+		// if ($this->validate($rules)){
+			$data = array(
+
+				'nome' => $this->request->getVar('nome'),
+				'tipo' => $this->request->getVar('tipo'),
+				'quantidade' => $this->request->getVar('quantidade'),
+				'preco' => $this->request->getVar('preco'),
+
+
+			);
+
+			$result = $products_model->update_product($id, $data);
+			
+ 			return redirect()->to(base_url('adminsession'));
+			
+		// }
+		// else{
+			// $this->editOrder($idproduto);	
+					
+		// }
+
+	}
+
+
+
+	
+	public function editCategoria($id){
+		$categories_model = new CategoriesModel();
+		$result = $categories_model->getData($id);
+		$data['categorias'] = $result;
+
+		// print_r($result);
+		
+		echo view ('common/headerUser');
+		echo view ('editCategoriesView',$data);
+		echo view ('common/footer');
+	}
+
+
+	public function editCategoriaToDB($id){
+		// $rules = [
+		// 	'description' => 'required|min_length[3]|max_length[255]',
+		// 	'amount' => 'required', 
+		// ];
+		$categories_model = new CategoriesModel();
+
+		// if ($this->validate($rules)){
+			$data = array(
+
+				'nome' => $this->request->getVar('nome'),
+
+			);
+
+			$result = $categories_model->update_categoria($id, $data);
+			
+ 			return redirect()->to(base_url('adminsession'));
+			
+		// }
+		// else{
+			// $this->editOrder($idproduto);	
+					
+		// }
+
+	}
+
+
 	public function insertOrderToDB(){
 
 
@@ -277,22 +411,91 @@ class Home extends BaseController
 
 
 
-	public function removeOrder($id=null){
+	public function removeOrder($idorder=null){
 		
-		if ($id==null){
-			return redirect()->to('customersession');
+		if ($idorder==null){
+			return redirect()->to('adminsession');
 		}
 
 		$orders_model = new OrdersModel();
 
-		$result = $orders_model->getData($id);
+		$result = $orders_model->getData($idorder);
 
 		if ($result !=NULL){
-			$orders_model->removeOrder($result['id']);		
-			return redirect()->to(base_url('customersession'));
+			$orders_model->removeOrder($result['idorder']);		
+			return redirect()->to(base_url('adminsession'));
 			
 		}else{
-			return redirect()->to(base_url('customersession'));
+			return redirect()->to(base_url('adminsession'));
+		}
+
+
+	} 
+
+
+
+		public function removeProduct($id=null){
+		
+		if ($id==null){
+			return redirect()->to('adminsession');
+		}
+
+		$products_model = new ProductsModel();
+
+		$result = $products_model->getData($id);
+
+		if ($result !=NULL){
+			$products_model->removeProduct($result['id']);		
+			return redirect()->to(base_url('adminsession'));
+			
+		}else{
+			return redirect()->to(base_url('adminsession'));
+		}
+
+
+	} 
+
+
+
+
+			public function removeCliente($email=null){
+		
+		if ($email==null){
+			return redirect()->to('adminsession');
+		}
+
+		$customers_model = new CustomersModel();
+
+		$result = $customers_model->getData($email);
+
+		if ($result !=NULL){
+			$customers_model->removeCustomer($result['Email']);		
+			return redirect()->to(base_url('adminsession'));
+			
+		}else{
+			return redirect()->to(base_url('adminsession'));
+		}
+
+
+	} 
+
+
+				public function removeCategoria($id=null){
+		
+		if ($id==null){
+			return redirect()->to('adminsession');
+		}
+
+		$categories_model = new CategoriesModel();
+
+		$result = $categories_model->getData($id);
+
+		if ($result !=NULL){
+			$categories_model->removeCategory($result['id']);		
+			return redirect()->to(base_url('adminsession'));
+			
+		}else{
+			return redirect()->to(base_url('adminsession'));
 		}
 
 
@@ -314,7 +517,6 @@ class Home extends BaseController
 //		$session = \Config\Services::session();
 
 		// codeignter 3 : $this->input->post("...");
-		print_r($data);
 
 		// if ($this->validate($rules)){
 			$data = array(

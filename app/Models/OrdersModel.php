@@ -49,11 +49,12 @@ class OrdersModel extends Model {
     //     return $this->asArray()->where(['customer_id'=> $customer_id])->findAll();
     // }
 
-    // public function removeOrder($id = null){
-    //     if ($id != null){
-    //         $this->delete($id);
-    //     }
-    // }
+    public function removeOrder($idorder = null){
+        if ($idorder != null){
+            $this->where('idorder', $idorder);
+            $this->delete();
+        }
+    }
 
 }
 

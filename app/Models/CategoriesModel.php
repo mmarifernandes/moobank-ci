@@ -21,20 +21,26 @@ class CategoriesModel extends Model {
         return $this->insert($data);
     }
 
-    public function update_categories($id,$data)
+    public function update_categoria($id,$data)
     {
-        return $this->update($id, $data);
+     
+        
+                    $this->set('nome', $data['nome']);
+               
+                    $this->where('id', $id);
+                   return $this->update(`categorias`, $data);
+
     }
 
     // public function getcategoriessbyCustomer($customer_id){
     //     return $this->asArray()->where(['customer_id'=> $customer_id])->findAll();
     // }
-
-    // public function removecategories($id = null){
-    //     if ($id != null){
-    //         $this->delete($id);
-    //     }
-    // }
+    public function removeCategory($id = null){
+        if ($id!= null){
+            $this->where('id', $id);
+            $this->delete();
+        }
+    }
 
 }
 

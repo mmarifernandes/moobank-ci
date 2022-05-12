@@ -19,7 +19,7 @@
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationcliente">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
    Cadastrar Cliente
 </h3><br>
@@ -32,7 +32,7 @@
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationproduto">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
 Cadastrar Produtos
 </h3><br>
@@ -45,7 +45,7 @@ Cadastrar Produtos
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/insertformorder">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
 Fazer Compra
 </h3><br>
@@ -57,7 +57,7 @@ Fazer Compra
 </div>
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationcategory">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
    Cadastrar Categorias
 </h3><br>
@@ -69,7 +69,7 @@ Fazer Compra
 </div>
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/clientesview">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
 Ver Clientes
 </h3><br>
@@ -84,7 +84,7 @@ Ver Clientes
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/productsview">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
 Ver Produtos
 </h3><br>
@@ -97,7 +97,7 @@ Ver Produtos
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/ordersview">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
   <h3 style="margin: 20px 0;">
 Ver Compras
 </h3><br>
@@ -111,7 +111,7 @@ Ver Compras
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/categoriesview">
-  <div class="w3-card w3-container" style="min-height:300px; border-radius: 17px">
+  <div class="w3-card w3-container" style="min-height:300px;">
     <h3 style="margin: 20px 0;">Ver Categorias</h3><br>
     <i class="fas fa-poll-h w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
     <p>Built-in responsiveness</p>
