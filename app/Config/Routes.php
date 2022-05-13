@@ -34,6 +34,7 @@ $routes->get('/', 'Home::index');
 $routes->add('registrationcliente', 'Home::registrationcliente');
 $routes->add('registrationproduto', 'Home::registrationproduto');
 $routes->add('registrationcategory', 'Home::registrationcategory');
+$routes->add('registrationgames', 'Home::registrationgames');
 
 $routes->add('insertdata', 'Home::insertData'); //insert cliente
 $routes->add('insertproduct', 'Home::insertProduct');
@@ -43,6 +44,7 @@ $routes->add('insertcategory','Home::insertcategory');
 $routes->add('clientesview', 'Home::clientesView');
 $routes->add('ordersview', 'Home::ordersView');
 $routes->add('productsview', 'Home::productsView');
+$routes->add('gamesview', 'Home::gamesView');
 $routes->add('categoriesview', 'Home::categoriesView');
 
 
@@ -57,6 +59,8 @@ $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
 
 // $routes->add('deletep/(:num)','Home::removeProduct/$1');
 $routes->add('searchp','Home::searchProduct/$1');
+$routes->add('searchg','Home::searchGames/$1');
+
 // $routes->add('productsview/(:any)', 'Home::searchProduct/$1');
 
 $routes->add('error','Home::error');

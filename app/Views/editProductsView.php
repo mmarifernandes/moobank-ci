@@ -21,10 +21,26 @@
             <input type="text" class="form-control" id="nomeInputLabel" name = "nome" value="<?php echo $produtos['nome']?>">
             <br>
             <label for="emailInputLabel">Tipo:</label>
-            <input type="text" class="form-control" id="emailInputLabel" name = "tipo" value="<?php echo $produtos['tipo']?>">
+
+            <?php 
+            if($produtos['tipo'] === "Games"){
+            
+              ?>
+            
+              <input type="text" class="form-control" id="emailInputLabel" name = "tipo" value="<?php echo $produtos['tipo']?>" readonly>
+            <?php 
+
+            }else{
+?>
+              <input type="text" class="form-control" id="emailInputLabel" name = "tipo" value="<?php echo $produtos['tipo']?>">
+
+            <?php 
+
+            }
+?>
             <br>
             <label for="cidadeInputLabel">Quantidade:</label>
-            <input type="text" class="form-control" id="cidadeInputLabel" name = "quantidade" value="<?php echo $produtos['qnt']?>">
+            <input type="text" class="form-control" id="cidadeInputLabel" name = "qnt" value="<?php echo $produtos['qnt']?>">
             <br>
             <label for="cidadeInputLabel">Preço:</label>
             <input type="text" class="form-control" id="cidadeInputLabel" name = "preco" value="<?php echo $produtos['preco']?>">

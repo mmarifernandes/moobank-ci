@@ -18,7 +18,7 @@
 <body>
   
 
-<h1>Cadastrar Produto</h1>
+<h1>Cadastrar Game</h1>
 <form action="insertproduct" method="post">
         <div class="form-group">
           <div class="col-md-4 mb-3">
@@ -29,13 +29,30 @@
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="tipo">Tipo</label>
-            <input type="text" class="form-control" id="etipo" name = "tipo">
+            <input type="text" class="form-control" id="etipo" name = "tipo" value= "Games" readonly>
           </div>
+        </div>
+          <div class="form-group">
+         <label for="produtos">Selecione a categoria: </label>
+<select name="categoria" id="categoria">
+  <?php
+   foreach ($categories as $categoria){
+     echo'<option value="'.$categoria['id'].'">'.$categoria['nome'].'</option>';  
+    }
+?>
+</select>
         </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="qnt">Quantidade</label>
             <input type="number" class="form-control" id="qnt" name="qnt">
+          </div>
+        </div>
+
+          <div class="form-group">
+          <div class="col-md-4 mb-3">
+            <label for="console">Console</label>
+            <input type="text" class="form-control" id="console" name="console">
           </div>
         </div>
          <div class="form-group">

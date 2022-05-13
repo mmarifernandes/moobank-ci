@@ -8,13 +8,13 @@
   <title>Document</title>
 </head>
 <body>
- <h1>Lista de Produtos</h1>
+ <h1>Lista de Games</h1>
 
 <?php
 // print_r($products);
 ?>
 
-<form action="searchp" method="post">
+<form action="searchg" method="post">
   <input type="text" name="search" placeholder="Digite um nome..">
       <button type="submit"><i class="fa fa-search"></i></button>
 </form>
@@ -28,8 +28,8 @@
         <th scope="col">Tipo</th>
         <th scope="col">Quantidade</th>
         <th scope="col">Preço</th>
-        <!-- <th scope="col">Categoria</th> -->
-        <!-- <th scope="col">Console</th> -->
+        <th scope="col">Categoria</th>
+        <th scope="col">Console</th>
         <th scope="col"><th>
         <th scope="col"><th>
     
@@ -40,15 +40,15 @@
   <tbody>
     <?php 
     foreach ($products as $row){
-      if($row['tipo'] === 'Games') continue;
+      if($row['tipo'] !== 'Games') continue;
       // print_r($row);
       echo "<tr> <td>".$row['id']."</td>";
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
       echo "<td>".$row['qnt']."</td>";   
       echo "<td>R$".$row['preco']."</td>";    
-      // echo "<td>".$row['categoria']."</td>";    
-      // echo "<td>".$row['console']."</td>";    
+      echo "<td>".$row['nomec']."</td>";    
+      echo "<td>".$row['console']."</td>";    
 
    
 ?>

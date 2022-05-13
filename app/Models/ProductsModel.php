@@ -11,6 +11,8 @@ class ProductsModel extends Model {
 
     public function getData($id = null){
         if ($id == null){
+            $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
             return $this->findAll();
         }
         return $this->asArray()->where(['id' => $id])->first();
@@ -20,9 +22,13 @@ class ProductsModel extends Model {
     public function getData2($string = null){
 
         if ($string == null){
+              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
             return $this->findAll();
         }
-        return $this->asArray()->like('nome', $string)->findAll();
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+        return $this->asArray()->like('produtos.nome', $string)->findAll();
     }
 
 
@@ -48,7 +54,7 @@ class ProductsModel extends Model {
         
         $this->set('nome', $data['nome']);
         $this->set('tipo', $data['tipo']);
-        $this->set('quantidade', $data['quantidade']);
+        $this->set('qnt', $data['qnt']);
         $this->set('preco', $data['preco']);
 
                     $this->where('id', $id);

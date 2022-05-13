@@ -51,6 +51,20 @@ class Home extends BaseController
 	}
 
 
+			public function registrationgames()
+	{
+
+
+			$categories_model = new CategoriesModel();
+        $data_categories = $categories_model->getData();
+        $data_all['categories'] = $data_categories;
+
+		echo view ('common/headerUser');
+		echo view ('formRegisterGame', $data_all);
+		echo view ('common/footer');
+
+	}
+
 	public function clientesview()
 	{
 		$customers_model = new CustomersModel();
@@ -99,6 +113,20 @@ class Home extends BaseController
 		echo view ('common/footer');
 
 	}
+
+
+		public function gamesview()
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData();
+        $data_all['products'] = $data_products;
+		// print_r($data_all);
+		echo view ('common/headerUser');
+		echo view ('gamesView', $data_all);
+		echo view ('common/footer');
+
+	}
+
 
 		public function categoriesview()
 	{
@@ -246,6 +274,23 @@ class Home extends BaseController
 	}
 
 
+		public function searchGames($string){
+		$products_model = new ProductsModel();
+
+		
+            $string = $this->request->getVar('search');
+			// print_r($string);
+		$result = $products_model->getData2($string);
+		$data['products'] = $result;
+
+		// print_r($data);
+		
+		echo view ('common/headerUser');
+		echo view ('gamesView',$data);
+		echo view ('common/footer');
+	}
+
+
 
 
 	
@@ -274,7 +319,7 @@ class Home extends BaseController
 
 				'nome' => $this->request->getVar('nome'),
 				'tipo' => $this->request->getVar('tipo'),
-				'quantidade' => $this->request->getVar('quantidade'),
+				'qnt' => $this->request->getVar('qnt'),
 				'preco' => $this->request->getVar('preco'),
 
 
@@ -401,7 +446,9 @@ class Home extends BaseController
 				
 				'categoria' => $this->request->getVar('categoria'),
 
-				'quantidade' => $this->request->getVar('qnt'),
+				'qnt' => $this->request->getVar('qnt'),
+
+				'console' => $this->request->getVar('console'),
 
 				'preco' => $this->request->getVar('preco'),
 

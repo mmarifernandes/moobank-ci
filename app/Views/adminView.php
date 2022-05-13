@@ -67,6 +67,20 @@ Fazer Compra
   </div>
   </a>
 </div>
+
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/registrationgames">
+  <div class="w3-card w3-container" style="min-height:300px;">
+  <h3 style="margin: 20px 0;">
+   Cadastrar Games
+</h3><br>
+  <i class="far fa-folder-open w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
+  <p>Built-in responsiveness</p>
+
+  </div>
+  </a>
+</div>
+
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/clientesview">
   <div class="w3-card w3-container" style="min-height:300px;">
@@ -119,6 +133,19 @@ Ver Compras
   </div>
 </a>
 </div>
+
+<div class="w3-quarter">
+  <a href="<?php echo base_url()?>/gamesview">
+  <div class="w3-card w3-container" style="min-height:300px;">
+    <h3 style="margin: 20px 0;">Ver Games</h3><br>
+    <i class="fas fa-poll-h w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
+    <p>Built-in responsiveness</p>
+    
+  </div>
+</a>
+</div>
+
+
 </div>
 </div>
 
