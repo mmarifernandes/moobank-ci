@@ -59,6 +59,7 @@ $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
 $routes->add('searchp','Home::searchProduct/$1');
 // $routes->add('productsview/(:any)', 'Home::searchProduct/$1');
 
+$routes->add('error','Home::error');
 
 $routes->add('deletep/(:num)','Home::removeProduct/$1');
 $routes->add('deletec/(:any)','Home::removeCliente/$1');

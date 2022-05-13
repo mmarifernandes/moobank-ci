@@ -17,6 +17,16 @@ class Home extends BaseController
 	}
 
 
+
+	public function error()
+	{
+		echo view ('common/headerUser');
+		echo view ('error');
+		echo view ('common/footer');
+	}
+
+
+
 	public function registrationcategory()
 	{
 		echo view ('common/headerUser');
@@ -83,7 +93,7 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData();
         $data_all['products'] = $data_products;
-		print_r($data_all);
+		// print_r($data_all);
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
 		echo view ('common/footer');
@@ -221,6 +231,10 @@ class Home extends BaseController
 
 	public function searchProduct($string){
 		$products_model = new ProductsModel();
+
+		
+            $string = $this->request->getVar('search');
+			// print_r($string);
 		$result = $products_model->getData2($string);
 		$data['products'] = $result;
 
@@ -330,6 +344,7 @@ class Home extends BaseController
 		// ];// revisar
 
 		$orders_model = new OrdersModel();
+		$products_model = new ProductsModel();
 
 		// if ($this->validate($rules)){
 			$data = array(
@@ -337,13 +352,24 @@ class Home extends BaseController
 				'email' =>  $this->request->getVar('clientes'),
 				'idproduto' => $this->request->getVar('produtos'),
 				'quantidade' => $this->request->getVar('qnt'),
+				// 'quantidademax' => $this->request->getVar('produtos'),
 
 
 
 			);
 			
+			// print_r($data['quantidademax']);			
 
-			$orders_model->insert_order($data);
+			// if($data['quantidade'] > $data['quantidademax']){
+			// 	echo 'erro';
+			// }
+			if($products_model->verificar($data) !== false){
+				$orders_model->insert_order($data);
+				$products_model->update_quantidade($data);
+			}else{
+			return redirect()->to('error');
+			}
+
  			return redirect()->to(base_url('adminsession'));
 			
 		// }

@@ -41,6 +41,8 @@
 <select name="produtos" id="produtos">
   <?php
    foreach ($products as $produtos){
+           if ($produtos['qnt'] == 0) continue;
+
      echo'<option value="'.$produtos['id'].'">'.$produtos['nome'].'</option>';  
     }
 ?>
@@ -50,7 +52,7 @@
   <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="quantidade">Quantidade</label>
-            <input type="text" class="form-control" id="quantidade" name="qnt">
+            <input type="number" class="form-control" id="quantidade" min="1" name="qnt">
           </div>
         </div>
 

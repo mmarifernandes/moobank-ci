@@ -7,7 +7,7 @@ class ProductsModel extends Model {
 
     protected $table = 'produtos';
     protected $primaryKey = 'id';
-    protected $allowedFields = [ 'id', 'nome', 'tipo', 'categoria', 'quantidade', 'preco', 'console'];
+    protected $allowedFields = [ 'id', 'nome', 'tipo', 'categoria', 'qnt', 'preco', 'console'];
 
     public function getData($id = null){
         if ($id == null){
@@ -19,12 +19,9 @@ class ProductsModel extends Model {
     
     public function getData2($string = null){
 
-            $LastName = $this->input->getPost('search');
-            print_r($LastName);
         if ($string == null){
             return $this->findAll();
         }
-        echo 'asadads';
         return $this->asArray()->like('nome', $string)->findAll();
     }
 
@@ -33,6 +30,17 @@ class ProductsModel extends Model {
     {            
         return $this->insert($data);
     }
+
+        public function verificar($data)
+    {            
+        $result = $this->asArray()->where(['id' => $data['idproduto']])->first();
+        // print_r($result['qnt']);
+        if($data['quantidade'] > $result['qnt'] ){
+            return false;
+        }
+        // return $this->insert($data);
+    }
+
 
     public function update_product($id,$data)
     {
@@ -46,6 +54,14 @@ class ProductsModel extends Model {
                     $this->where('id', $id);
                    return $this->update(`produtos`, $data);
 
+    }
+
+    public function update_quantidade($data){
+
+        print_r($data);
+          $this->set('qnt', 'qnt-'.$data['quantidade'], false);
+        $this->where('id', $data['idproduto']);
+        return $this->update(`produtos`, $data);
     }
 
     // public function getproductssbyCustomer($customer_id){

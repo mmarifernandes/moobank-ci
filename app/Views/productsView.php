@@ -11,11 +11,11 @@
  <h1>Lista de Produtos</h1>
 
 <?php
-print_r($products);
+// print_r($products);
 ?>
 
 <form action="searchp" method="post">
-  <input type="text" name="search" placeholder="Search..">
+  <input type="text" name="search" placeholder="Digite um nome..">
       <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 
@@ -40,11 +40,11 @@ print_r($products);
   <tbody>
     <?php 
     foreach ($products as $row){
-      print_r($row);
+      // print_r($row);
       echo "<tr> <td>".$row['id']."</td>";
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
-      echo "<td>".$row['quantidade']."</td>";   
+      echo "<td>".$row['qnt']."</td>";   
       echo "<td>R$".$row['preco']."</td>";    
       // echo "<td>".$row['categoria']."</td>";    
       // echo "<td>".$row['console']."</td>";    

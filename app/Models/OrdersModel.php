@@ -36,6 +36,7 @@ class OrdersModel extends Model {
 
     public function insert_order($data)
     {            
+        
         return $this->insert($data);
     }
 
