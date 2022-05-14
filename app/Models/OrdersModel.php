@@ -24,9 +24,11 @@ class OrdersModel extends Model {
 
         public function getTotal($idorder = null){
         if ($idorder == null){
-            $this->select('*, sum((preco*`clientes-produtos`.quantidade)) as total, produtos.nome as nome');
+            $this->select('*, sum((preco*`clientes-produtos`.quantidade)) as total, produtos.nome as nome, clientes.Nome as cliente');
             $this->join('produtos', 'produtos.id = clientes-produtos.idproduto');
-                        $this->groupBy('clientes-produtos.email'); // Produces: GROUP BY title
+            $this->join('clientes', 'clientes.Email = `clientes-produtos`.email');
+            $this->groupBy('clientes-produtos.email'); // Produces: GROUP BY title
+            $this->orderBy('total', 'desc');
 
             return $this->findAll();
         }

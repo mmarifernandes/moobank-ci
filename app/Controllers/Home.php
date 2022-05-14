@@ -221,6 +221,82 @@ class Home extends BaseController
 
 	}
 
+		public function quantidade($string)
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData4($string);
+        $data_all['products'] = $data_products;
+		// print_r($string);
+		echo view ('common/headerUser');
+		echo view ('productsView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+
+			public function preco($string)
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData5($string);
+        $data_all['products'] = $data_products;
+		// print_r($string);
+		echo view ('common/headerUser');
+		echo view ('productsView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+
+			public function quantidadeg($string)
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData4($string);
+        $data_all['products'] = $data_products;
+
+
+		
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data_all['categorias'] = $result;
+
+				$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data_all['consoles'] = $result;
+
+
+		// print_r($string);
+		echo view ('common/headerUser');
+		echo view ('gamesView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+
+			public function precog($string)
+	{
+		$products_model = new ProductsModel();
+        $data_products = $products_model->getData5($string);
+        $data_all['products'] = $data_products;
+
+
+		
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data_all['categorias'] = $result;
+
+				$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data_all['consoles'] = $result;
+
+
+		// print_r($string);
+		echo view ('common/headerUser');
+		echo view ('gamesView', $data_all);
+		echo view ('common/footer');
+
+	}
+
+	
 
 
 	public function editCliente($email){
@@ -353,6 +429,26 @@ class Home extends BaseController
 		echo view ('gamesView',$data);
 		echo view ('common/footer');
 	}
+
+	// public function orderby($string){
+
+		  
+    //     $customers_model = new CustomersModel();
+	// 	$orders_model = new OrdersModel();
+    //     $data_customers = $customers_model->getData2();
+    //     $data_orders = $orders_model->getData($string);
+    //           		$orders_model2 = new OrdersModel();
+    //       $data_orders2 = $orders_model2->getTotal();
+
+    //     $data_all['customers'] = $data_customers;
+    //     $data_all['orders'] = $data_orders;
+	// 	$data_all['total'] = $data_orders2;
+
+	// 	// print_r($result)
+	// 	echo view ('common/headerUser');
+	// 	echo view ('ordersView',$data_all);
+	// 	echo view ('common/footer');
+	// }
 
 
 

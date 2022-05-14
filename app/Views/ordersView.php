@@ -10,6 +10,7 @@
  <h1>Lista de Compras</h1>
 
 
+
 <table style="text-align: left; border-collapse: collapse !important;" class="table">
   <tbody>
 <?php
@@ -17,6 +18,9 @@
       // echo '<br>';
       // print_r($customers);
 
+    foreach ($total as $total2){
+        echo "<p>".$total2['cliente']." => R$".$total2['total']."</p>";
+    }
     foreach ($customers as $customer){
         echo "<tr><td style='padding: 0; text-align: left'><h3>".$customer['Nome']."</h3></td></tr>";
 ?>
@@ -57,7 +61,7 @@
 <td>
 
 
-    <a href="<?php echo base_url('edit/'.$row['idorder']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('edit/'.$row['idorder']);?>" class="btn btn-light">Edit</a>
     </td>
 <td>
     <a href="<?php echo base_url('delete/'.$row['idorder']);?>" class="btn btn-danger">Delete</a>

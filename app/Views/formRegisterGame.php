@@ -62,6 +62,14 @@
           </div>
         </div>
       
+
+          <div class="form-group">
+          <div class="col-md-4 mb-3">
+            <label for="imagem">Url da Imagem</label>
+            <input type="url" class="form-control" id="imagem" name="imagem" required>
+          </div>
+        </div>
+
         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
 </body>

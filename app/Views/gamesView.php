@@ -48,8 +48,9 @@
         <!-- <th scope="col">Id Produto</th> -->
         <th scope="col">Produto</th>
         <th scope="col">Tipo</th>
-        <th scope="col">Quantidade</th>
-        <th scope="col">Preço</th>
+    <th scope="col">Quantidade <a href="<?php echo base_url('quantidadeg') ?>/asc">Asc</a> <a href="<?php echo base_url('quantidadeg') ?>/desc">Desc</a></th>
+        <th scope="col">Preço  <a href="<?php echo base_url('precog') ?>/asc">Asc</a> <a href="<?php echo base_url('precog') ?>/desc">Desc</a></th>
+        <!-- <th scope="col">Categoria</th> -->
         <th scope="col">Categoria</th>
         <th scope="col">Console</th>
         <th scope="col"><th>
@@ -79,7 +80,7 @@
 <td>
 
 
-    <a href="<?php echo base_url('editp/'.$row['id']);?>" class="btn btn-info">Edit</a>
+    <a href="<?php echo base_url('editp/'.$row['id']);?>" class="btn btn-light">Edit</a>
     </td>
 <td>
     <a href="<?php echo base_url('deletep/'.$row['id']);?>" class="btn btn-danger">Delete</a>

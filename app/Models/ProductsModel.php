@@ -52,7 +52,31 @@ class ProductsModel extends Model {
         return $this->asArray()->where(['produtos.id' => $id])->first();
     }
 
+    public function getData4($string = null){
 
+        if ($string == null){
+              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            return $this->findAll();
+        }
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            $this->orderBy('qnt', $string);
+        return $this->findAll();
+    }
+
+        public function getData5($string = null){
+
+        if ($string == null){
+              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            return $this->findAll();
+        }
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            $this->orderBy('preco', $string);
+        return $this->findAll();
+    }
     
 
     public function getCategory($id = null){

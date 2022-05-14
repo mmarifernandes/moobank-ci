@@ -61,6 +61,15 @@ $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
 $routes->add('searchp','Home::searchProduct/$1');
 $routes->add('searchg','Home::searchGames/$1');
 
+// $routes->add('ordersview/(:any)', 'Home::orderby/$1');
+
+$routes->add('quantidade/(:any)','Home::quantidade/$1');
+$routes->add('preco/(:any)','Home::preco/$1');
+
+$routes->add('quantidadeg/(:any)','Home::quantidadeg/$1');
+$routes->add('precog/(:any)','Home::precog/$1');
+
+
 
 
 $routes->add('category/(:num)','Home::categorysearch/$1');
