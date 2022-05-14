@@ -83,7 +83,7 @@ $routes->add('deletep/(:num)','Home::removeProduct/$1');
 $routes->add('deletec/(:any)','Home::removeCliente/$1');
 $routes->add('deleteca/(:any)','Home::removeCategoria/$1');
 $routes->add('delete/(:num)','Home::removeOrder/$1');
-$routes->add('adminsession', 'Admin::adminSession');
+$routes->add('home', 'Admin::home');
 
 /**
  * --------------------------------------------------------------------

@@ -13,7 +13,7 @@ class Home extends BaseController
 	public function index()
 
 	{   
-		return redirect()->to(base_url('adminsession'));
+		return redirect()->to(base_url('home'));
 	}
 
 
@@ -211,7 +211,7 @@ class Home extends BaseController
 			// print_r($email);
 			$result = $orders_model->update_order($idorder, $data);
 			
- 			return redirect()->to(base_url('adminsession'));
+ 			return redirect()->to(base_url('home'));
 			
 		// }
 		// else{
@@ -332,7 +332,7 @@ class Home extends BaseController
 
 			$result = $customers_model->update_customer($email, $data);
 			
- 			return redirect()->to(base_url('adminsession'));
+ 			return redirect()->to(base_url('home'));
 			
 		// }
 		// else{
@@ -495,7 +495,7 @@ class Home extends BaseController
 
 			$result = $products_model->update_product($id, $data);
 			
- 			return redirect()->to(base_url('adminsession'));
+ 			return redirect()->to(base_url('home'));
 			
 		// }
 		// else{
@@ -537,7 +537,7 @@ class Home extends BaseController
 
 			$result = $categories_model->update_categoria($id, $data);
 			
- 			return redirect()->to(base_url('adminsession'));
+ 			return redirect()->to(base_url('home'));
 			
 		// }
 		// else{
@@ -583,7 +583,7 @@ class Home extends BaseController
 			return redirect()->to('error');
 			}
 
- 			return redirect()->to(base_url('adminsession'));
+ 			return redirect()->to(base_url('home'));
 			
 		// }
 		// else{
@@ -627,7 +627,7 @@ class Home extends BaseController
 			
 
 			$products_model->insert_products($data);
-			return redirect()->to('/adminsession');
+			return redirect()->to('/home');
 			
 		// }
 		// else{
@@ -658,7 +658,7 @@ class Home extends BaseController
 			
 
 			$categories_model->insert_categories($data);
-			return redirect()->to('/adminsession');
+			return redirect()->to('/home');
 			
 		// }
 		// else{
@@ -672,7 +672,7 @@ class Home extends BaseController
 	public function removeOrder($idorder=null){
 		
 		if ($idorder==null){
-			return redirect()->to('adminsession');
+			return redirect()->to('home');
 		}
 
 		$orders_model = new OrdersModel();
@@ -681,10 +681,10 @@ class Home extends BaseController
 
 		if ($result !=NULL){
 			$orders_model->removeOrder($result['idorder']);		
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 			
 		}else{
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 		}
 
 
@@ -695,7 +695,7 @@ class Home extends BaseController
 		public function removeProduct($id=null){
 		
 		if ($id==null){
-			return redirect()->to('adminsession');
+			return redirect()->to('home');
 		}
 
 		$products_model = new ProductsModel();
@@ -704,10 +704,10 @@ class Home extends BaseController
 
 		if ($result !=NULL){
 			$products_model->removeProduct($result['id']);		
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 			
 		}else{
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 		}
 
 
@@ -719,7 +719,7 @@ class Home extends BaseController
 			public function removeCliente($email=null){
 		
 		if ($email==null){
-			return redirect()->to('adminsession');
+			return redirect()->to('home');
 		}
 
 		$customers_model = new CustomersModel();
@@ -728,10 +728,10 @@ class Home extends BaseController
 
 		if ($result !=NULL){
 			$customers_model->removeCustomer($result['Email']);		
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 			
 		}else{
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 		}
 
 
@@ -741,7 +741,7 @@ class Home extends BaseController
 				public function removeCategoria($id=null){
 		
 		if ($id==null){
-			return redirect()->to('adminsession');
+			return redirect()->to('home');
 		}
 
 		$categories_model = new CategoriesModel();
@@ -750,10 +750,10 @@ class Home extends BaseController
 
 		if ($result !=NULL){
 			$categories_model->removeCategory($result['id']);		
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 			
 		}else{
-			return redirect()->to(base_url('adminsession'));
+			return redirect()->to(base_url('home'));
 		}
 
 
@@ -794,7 +794,7 @@ class Home extends BaseController
 			);
 			$customers_model->insert_data_login($data);
 
-			return redirect()->to('/adminsession');
+			return redirect()->to('/home');
 			
 		// }
 		// else{

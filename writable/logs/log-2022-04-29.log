@@ -36,70 +36,70 @@ CRITICAL - 2022-04-29 12:29:23 --> Invalid file: login.php
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:52 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:52 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:29:53 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:29:53 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -116,10 +116,10 @@ CRITICAL - 2022-04-29 12:30:08 --> Invalid file: adminview.php
 #6 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/home/aluno/\xC3\x81r...')
 #8 {main}
-CRITICAL - 2022-04-29 12:30:25 --> Invalid file: adminsession.php
-#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminsession.ph...')
-#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('adminsession', Array, true)
-#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('adminsession')
+CRITICAL - 2022-04-29 12:30:25 --> Invalid file: home.php
+#0 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.ph...')
+#1 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#2 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(14): view('home')
 #3 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
 #4 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 /home/aluno/Área de Trabalho/codeigniter marina/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)

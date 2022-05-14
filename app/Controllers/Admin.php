@@ -7,7 +7,7 @@ class Admin extends BaseController
 {
 	
  
-	public function adminSession(){
+	public function home(){
         // $orders_model = new OrdersModel();
         $customers_model = new CustomersModel();
         $data_customers = $customers_model->getData();
