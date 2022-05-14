@@ -120,6 +120,16 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData();
         $data_all['products'] = $data_products;
+
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data_all['categorias'] = $result;
+
+				$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data_all['consoles'] = $result;
+
+
 		// print_r($data_all);
 		echo view ('common/headerUser');
 		echo view ('gamesView', $data_all);
@@ -157,11 +167,11 @@ class Home extends BaseController
 
 	public function insertOrder(){
 		$customers_model = new CustomersModel();
-		$result = $customers_model->getData(null);
+		$result = $customers_model->getData();
 		$data['customers'] = $result;
 
 		$products_model = new ProductsModel();
-		$result2 = $products_model->getData(null);
+		$result2 = $products_model->getData();
 		$data['products'] = $result2;
 		// print_r($data['products']);
 		echo view ('common/headerUser');
@@ -283,6 +293,16 @@ class Home extends BaseController
 		$result = $products_model->getData2($string);
 		$data['products'] = $result;
 
+		
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data['categorias'] = $result;
+
+				$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data['consoles'] = $result;
+
+
 		// print_r($data);
 		
 		echo view ('common/headerUser');
@@ -291,6 +311,49 @@ class Home extends BaseController
 	}
 
 
+			public function categorysearch($id){
+		$products_model = new ProductsModel();
+		$result = $products_model->getCategory($id);
+		$data['products'] = $result;
+
+
+		
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data['categorias'] = $result;
+
+				$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data['consoles'] = $result;
+
+		
+		
+		echo view ('common/headerUser');
+		echo view ('gamesView',$data);
+		echo view ('common/footer');
+	}
+
+
+		public function consolesearch($string){
+
+		$products_model = new ProductsModel();
+		$result = $products_model->getConsole($string);
+		$data['products'] = $result;
+
+		$products_model = new ProductsModel();
+		$result = $products_model->getData3();
+		$data['consoles'] = $result;
+
+		
+			$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data['categorias'] = $result;
+		// print_r($result)
+		echo view ('common/headerUser');
+		echo view ('gamesView',$data);
+		echo view ('common/footer');
+	}
+
 
 
 	
@@ -298,6 +361,12 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
 		$result = $products_model->getData($id);
 		$data['produtos'] = $result;
+
+
+				$categories_model = new CategoriesModel();
+		$result = $categories_model->getData();
+		$data['categorias'] = $result;
+
 
 		// print_r($result);
 		
@@ -321,6 +390,9 @@ class Home extends BaseController
 				'tipo' => $this->request->getVar('tipo'),
 				'qnt' => $this->request->getVar('qnt'),
 				'preco' => $this->request->getVar('preco'),
+				'categoria' => $this->request->getVar('categoria'),
+				'imagem' => $this->request->getVar('imagem'),
+
 
 
 			);
@@ -451,6 +523,9 @@ class Home extends BaseController
 				'console' => $this->request->getVar('console'),
 
 				'preco' => $this->request->getVar('preco'),
+
+				'imagem' => $this->request->getVar('imagem'),
+
 
 			);
 			

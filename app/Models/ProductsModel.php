@@ -7,15 +7,19 @@ class ProductsModel extends Model {
 
     protected $table = 'produtos';
     protected $primaryKey = 'id';
-    protected $allowedFields = [ 'id', 'nome', 'tipo', 'categoria', 'qnt', 'preco', 'console'];
+    protected $allowedFields = [ 'id', 'nome', 'tipo', 'categoria', 'qnt', 'preco', 'console', 'imagem'];
 
     public function getData($id = null){
         if ($id == null){
-            $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
+
             $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
             return $this->findAll();
         }
-        return $this->asArray()->where(['id' => $id])->first();
+
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+        return $this->asArray()->where(['produtos.id' => $id])->first();
     }
 
     
@@ -30,6 +34,49 @@ class ProductsModel extends Model {
             $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
         return $this->asArray()->like('produtos.nome', $string)->findAll();
     }
+
+      public function getData3($id = null){
+        if ($id == null){
+            $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
+            // $this->distinct('produtos.console as consoless');
+            // $this->db->distinct();
+            $this->where('console is not null');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            $this->groupBy('console'); // Produces: GROUP BY title
+
+            return $this->findAll();
+        }
+
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+        return $this->asArray()->where(['produtos.id' => $id])->first();
+    }
+
+
+    
+
+    public function getCategory($id = null){
+
+        if ($id == 0){
+              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+            return $this->findAll();
+        }
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+        return $this->asArray()->where('categorias.id', $id)->findAll();
+    }
+
+
+        public function getConsole($string = null){
+
+          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+
+        return $this->asArray()->where('console', $string)->findAll();
+    }
+
+
 
 
     public function insert_products($data)
@@ -56,6 +103,9 @@ class ProductsModel extends Model {
         $this->set('tipo', $data['tipo']);
         $this->set('qnt', $data['qnt']);
         $this->set('preco', $data['preco']);
+        $this->set('categoria', $data['categoria']);
+        $this->set('imagem', $data['imagem']);
+
 
                     $this->where('id', $id);
                    return $this->update(`produtos`, $data);

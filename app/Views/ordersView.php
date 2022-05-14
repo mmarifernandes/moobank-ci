@@ -29,7 +29,7 @@
     <thead>
       <tr>
         <!-- <th scope="col">#</th> -->
-      <th scope="col">Id Produto</th>
+      <!-- <th scope="col">Id Produto</th> -->
       <th scope="col">Produto</th>
       <th scope="col">Tipo</th>
             <th scope="col">Quantidade</th>
@@ -45,7 +45,7 @@
 
     foreach ($orders as $row){
       if ($row['email'] !== $customer['Email']) continue;
-      echo "<tr> <td>".$row['idproduto']."</td>";
+      // echo "<tr> <td>".$row['idproduto']."</td>";
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
       echo "<td>".$row['qnt']."</td>";
@@ -70,7 +70,7 @@
 
     foreach ($total as $row){
       if ($row['email'] !== $customer['Email']) continue;
-      echo "<tr style='background-color: rgb(195, 143, 223);'> <td></td><td></td><td></td><td></td><td></td><td></td><td style='font-weight: bold; font-size: 20px;'>Total: R$".$row['total']."</td>";
+      echo "<tr style='background-color: rgb(195, 143, 223);'> <td></td><td></td><td></td><td></td><td></td><td style='font-weight: bold; font-size: 20px;'>Total: R$".$row['total']."</td>";
 
       
     }

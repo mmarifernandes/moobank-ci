@@ -61,6 +61,11 @@ $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
 $routes->add('searchp','Home::searchProduct/$1');
 $routes->add('searchg','Home::searchGames/$1');
 
+
+
+$routes->add('category/(:num)','Home::categorysearch/$1');
+$routes->add('console/(:any)','Home::consolesearch/$1');
+
 // $routes->add('productsview/(:any)', 'Home::searchProduct/$1');
 
 $routes->add('error','Home::error');

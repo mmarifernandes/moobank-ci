@@ -23,25 +23,32 @@
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="nameInputLabel">Nome</label>
-            <input type="text" class="form-control" id="nameInputLabel" name="nome">
+            <input type="text" class="form-control" id="nameInputLabel" name="nome" required>
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="tipo">Tipo</label>
-            <input type="text" class="form-control" id="etipo" name = "tipo">
+            <input type="text" class="form-control" id="etipo" name = "tipo" required>
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="qnt">Quantidade</label>
-            <input type="number" class="form-control" id="qnt" name="qnt">
+            <input type="number" class="form-control" id="qnt" name="qnt" required>
           </div>
         </div>
          <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="preco">Preço</label>
-            <input type="number" class="form-control" id="preco" name="preco">
+            <input type="number" class="form-control" id="preco" name="preco" required>
+          </div>
+        </div>
+
+          <div class="form-group">
+          <div class="col-md-4 mb-3">
+            <label for="imagem">Url da Imagem</label>
+            <input type="url" class="form-control" id="imagem" name="imagem" required>
           </div>
         </div>
       

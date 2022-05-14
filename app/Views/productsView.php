@@ -14,7 +14,7 @@
 // print_r($products);
 ?>
 
-<form action="searchp" method="post">
+<form action="<?php echo base_url('searchp')?>" method="post">
   <input type="text" name="search" placeholder="Digite um nome..">
       <button type="submit"><i class="fa fa-search"></i></button>
 </form>
@@ -22,8 +22,8 @@
   <table style="background-color: rgb(178, 133, 204);" class="table">
     <thead>
         <tr>
-        <!-- <th scope="col">#</th> -->
-        <th scope="col">Id Produto</th>
+        <th scope="col"></th>
+        <!-- <th scope="col">Id Produto</th> -->
         <th scope="col">Produto</th>
         <th scope="col">Tipo</th>
         <th scope="col">Quantidade</th>
@@ -42,7 +42,8 @@
     foreach ($products as $row){
       if($row['tipo'] === 'Games') continue;
       // print_r($row);
-      echo "<tr> <td>".$row['id']."</td>";
+      echo "<tr> <td><img src=".$row['imagem']."></td>";
+      // echo "<td>".$row['id']."</td>";
       echo "<td>".$row['nome']."</td>";
       echo "<td>".$row['tipo']."</td>";
       echo "<td>".$row['qnt']."</td>";   
@@ -52,7 +53,6 @@
 
    
 ?>
-
 <td>
 
 

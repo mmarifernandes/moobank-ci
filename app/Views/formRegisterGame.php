@@ -33,7 +33,7 @@
           </div>
         </div>
           <div class="form-group">
-         <label for="produtos">Selecione a categoria: </label>
+         <label for="categoria">Selecione a categoria: </label>
 <select name="categoria" id="categoria">
   <?php
    foreach ($categories as $categoria){
