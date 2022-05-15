@@ -23,7 +23,8 @@
           </div>
         </div>   
         <input type = "hidden" id="inputHidden" name="customerIDform" value="<?php echo $orders['email']?>">
-    
+            <input type = "hidden" id="inputHidden" name="idproduto" value="<?php echo $orders['idproduto']?>">
+
       
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success" name="submit">Cadastrar</button>
 </form>

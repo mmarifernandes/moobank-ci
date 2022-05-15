@@ -23,7 +23,7 @@
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="nameInputLabel">Nome</label>
-            <input type="text" class="form-control" id="nameInputLabel" name="nome">
+            <input type="text" class="form-control" id="nameInputLabel" name="nome" required>
           </div>
         </div>
         <div class="form-group">
@@ -45,20 +45,20 @@
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="qnt">Quantidade</label>
-            <input type="number" class="form-control" id="qnt" name="qnt">
+            <input type="number" class="form-control" id="qnt" name="qnt" required>
           </div>
         </div>
 
           <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="console">Console</label>
-            <input type="text" class="form-control" id="console" name="console">
+            <input type="text" class="form-control" id="console" name="console" required>
           </div>
         </div>
          <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="preco">Preço</label>
-            <input type="number" class="form-control" id="preco" name="preco">
+            <input type="number" class="form-control" id="preco" name="preco" required>
           </div>
         </div>
       
@@ -70,7 +70,7 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success" name="submit">Cadastrar</button>
 </form>
 </body>
 </html>

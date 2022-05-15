@@ -25,30 +25,30 @@
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="nameInputLabel">Nome completo:</label>
-            <input type="text" class="form-control" id="nameInputLabel" name="nome">
+            <input type="text" class="form-control" id="nameInputLabel" name="nome" required>
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="emailInputLabel">E-mail:</label>
-            <input type="text" class="form-control" id="emailInputLabel" name = "email">
+            <input type="text" class="form-control" id="emailInputLabel" name = "email" required>
           </div>
         </div>
           <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="DNascimento">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="datanascimento" name = "datanascimento">
+            <input type="date" class="form-control" id="datanascimento" name = "datanascimento" required>
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="cidade">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" name="cidade">
+            <input type="text" class="form-control" id="cidade" name="cidade" required>
           </div>
         </div>
         
       
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success" name="submit">Cadastrar</button>
 </form>
 </body>
 </html>

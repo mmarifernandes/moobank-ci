@@ -10,7 +10,7 @@
 
 <h1>Lista de Clientes</h1>
 
-<table style="background-color: rgb(178, 133, 204);" class="table">
+<table style="background-color: rgb(171, 209, 167);" class="table">
   <thead>
     <tr>
       <th scope="col">Name</th>

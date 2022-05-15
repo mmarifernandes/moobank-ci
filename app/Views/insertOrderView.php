@@ -12,20 +12,7 @@
 <h1>Cadastrar Compra</h1>
 
 <form action="insertordertodb" method="post">
-        <!-- <div class="form-group">
-          <div class="col-md-4 mb-3">
-            <label for="nameInputLabel">Description:</label>
-            <input type="text" class="form-control" id="nameInputLabel" name="description">
-          </div>
-        </div>
 
-        <div class="form-group">
-          <div class="col-md-4 mb-3">
-            <label for="emailInputLabel">Amount:</label>
-            <input type="text" class="form-control" id="emailInputLabel" name = "amount">
-          </div>
-        </div>   
-       -->
 
 <label for="clientes">Selecione o cliente: </label>
 <select name="clientes" id="clientes">
@@ -52,9 +39,9 @@
   <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="quantidade">Quantidade</label>
-            <input type="number" class="form-control" id="quantidade" min="1" name="qnt">
+            <input type="number" class="form-control" id="quantidade" min="1" name="qnt" required>
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success" name="submit">Cadastrar</button>
 </form>

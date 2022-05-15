@@ -529,3 +529,9 @@ CRITICAL - 2022-05-14 16:24:52 --> Invalid file: categoriesView.php
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #8 {main}
+CRITICAL - 2022-05-14 17:59:25 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-14 18:02:39 --> Maximum execution time of 30 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

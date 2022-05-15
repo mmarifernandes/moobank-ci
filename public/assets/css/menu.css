@@ -26,19 +26,16 @@ body{
   
 }
 .w3-card.w3-container:hover {
-background-color: rgb(128, 209, 104);
-color:rgb(81, 6, 124);
+background-color: rgb(113, 182, 92);
+color:rgb(0, 0, 0);
 }
 
-a:link {
+a:hover {
+  color: rgb(74, 167, 116);
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.w3-card,
-.w3-card-2{
-  /* box-shadow: none !important; */
-}

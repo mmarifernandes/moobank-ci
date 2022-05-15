@@ -57,15 +57,12 @@ $routes->add('editproduto/(:any)','Home::editProdutoToDB/$1');
 $routes->add('editca/(:any)','Home::editCategoria/$1');
 $routes->add('editcategoria/(:any)','Home::editCategoriaToDB/$1');
 
-// $routes->add('deletep/(:num)','Home::removeProduct/$1');
 $routes->add('searchp','Home::searchProduct/$1');
 $routes->add('searchg','Home::searchGames/$1');
 
-// $routes->add('ordersview/(:any)', 'Home::orderby/$1');
 
 $routes->add('quantidade/(:any)','Home::quantidade/$1');
 $routes->add('preco/(:any)','Home::preco/$1');
-
 $routes->add('quantidadeg/(:any)','Home::quantidadeg/$1');
 $routes->add('precog/(:any)','Home::precog/$1');
 
@@ -75,10 +72,8 @@ $routes->add('precog/(:any)','Home::precog/$1');
 $routes->add('category/(:num)','Home::categorysearch/$1');
 $routes->add('console/(:any)','Home::consolesearch/$1');
 
-// $routes->add('productsview/(:any)', 'Home::searchProduct/$1');
 
 $routes->add('error','Home::error');
-
 $routes->add('deletep/(:num)','Home::removeProduct/$1');
 $routes->add('deletec/(:any)','Home::removeCliente/$1');
 $routes->add('deleteca/(:any)','Home::removeCategoria/$1');

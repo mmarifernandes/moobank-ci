@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/84a7caccb6.js" crossorigin="anonymous"></script>
    </head>
-  <title>Document</title>
+  <title>Home</title>
 </head>
 <body>
 
@@ -19,12 +19,11 @@
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationcliente">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
    Cadastrar Cliente
 </h3><br>
   <i class="fas fa-user-cog w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
  
   </div>
   </a>
@@ -32,64 +31,54 @@
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationproduto">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
 Cadastrar Produtos
 </h3><br>
   <i class="fas fa-tags w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Standard CSS only</p>
-
   </div>
   </a>
 </div>
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/insertformorder">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
 Fazer Compra
 </h3><br>
-  <i class="fas fa-shopping-bag w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Paper like design</p>
- 
+  <i class="fas fa-shopping-bag w3-margin-bottom w3-text-theme" style="font-size:60px"></i> 
   </div>
   </a>
 </div>
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationcategory">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
    Cadastrar Categorias
 </h3><br>
   <i class="far fa-folder-open w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
-
   </div>
   </a>
 </div>
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/registrationgames">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
    Cadastrar Games
 </h3><br>
-  <i class="far fa-folder-open w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
-
+  <i class="fas fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
   </div>
   </a>
 </div>
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/clientesview">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
 Ver Clientes
 </h3><br>
-  <i class="fas fa-users w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
- 
+  <i class="fas fa-users w3-margin-bottom w3-text-theme" style="font-size:60px"></i> 
   </div>
   </a>
 </div>
@@ -98,26 +87,22 @@ Ver Clientes
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/productsview">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
 Ver Produtos
 </h3><br>
-  <i class="fas fa-file-alt w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
- 
+  <i class="fas fa-file-alt w3-margin-bottom w3-text-theme" style="font-size:60px"></i> 
   </div>
 </a>
 </div>
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/ordersview">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
   <h3 style="margin: 20px 0;">
 Ver Compras
 </h3><br>
-  <i class="fas fa-shopping-cart w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-  <p>Built-in responsiveness</p>
- 
+  <i class="fas fa-shopping-cart w3-margin-bottom w3-text-theme" style="font-size:60px"></i> 
   </div>
   
 </div>
@@ -125,22 +110,18 @@ Ver Compras
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/categoriesview">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
     <h3 style="margin: 20px 0;">Ver Categorias</h3><br>
-    <i class="fas fa-poll-h w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-    <p>Built-in responsiveness</p>
-    
+    <i class="fas fa-poll-h w3-margin-bottom w3-text-theme" style="font-size:60px"></i>    
   </div>
 </a>
 </div>
 
 <div class="w3-quarter">
   <a href="<?php echo base_url()?>/gamesview">
-  <div class="w3-card w3-container" style="min-height:300px;">
+  <div class="w3-card w3-container" style="min-height:250px;">
     <h3 style="margin: 20px 0;">Ver Games</h3><br>
-    <i class="fas fa-poll-h w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
-    <p>Built-in responsiveness</p>
-    
+    <i class="fas fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:60px"></i>    
   </div>
 </a>
 </div>

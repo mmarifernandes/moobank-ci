@@ -144,9 +144,6 @@ class ProductsModel extends Model {
         return $this->update(`produtos`, $data);
     }
 
-    // public function getproductssbyCustomer($customer_id){
-    //     return $this->asArray()->where(['customer_id'=> $customer_id])->findAll();
-    // }
 
     public function removeProduct($id = null){
         if ($id!= null){

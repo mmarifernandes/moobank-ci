@@ -72,7 +72,7 @@
         <input type = "hidden" id="inputHidden" name="customerIDform" value="<?php echo $produtos['id']?>">
     
       
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-success" name="submit">Cadastrar</button>
 </form>
 
 

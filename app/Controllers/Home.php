@@ -69,9 +69,6 @@ class Home extends BaseController
 	{
 		$customers_model = new CustomersModel();
         $data_customers = $customers_model->getData();
-        // $data_orders = $orders_model->getData();
-        // $data = $this->session->get();
-        // $data_all['orders'] = $data_orders;
         $data_all['customers'] = $data_customers;
 
 		echo view ('common/headerUser');
@@ -83,13 +80,12 @@ class Home extends BaseController
 	public function ordersview()
 	{
 
-		  
         $customers_model = new CustomersModel();
 		$orders_model = new OrdersModel();
         $data_customers = $customers_model->getData2();
         $data_orders = $orders_model->getData();
-              		$orders_model2 = new OrdersModel();
-          $data_orders2 = $orders_model2->getTotal();
+        $orders_model2 = new OrdersModel();
+        $data_orders2 = $orders_model2->getTotal();
 
         $data_all['customers'] = $data_customers;
         $data_all['orders'] = $data_orders;
@@ -107,7 +103,6 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData();
         $data_all['products'] = $data_products;
-		// print_r($data_all);
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
 		echo view ('common/footer');
@@ -121,16 +116,15 @@ class Home extends BaseController
         $data_products = $products_model->getData();
         $data_all['products'] = $data_products;
 
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data_all['categorias'] = $result;
 
-				$products_model = new ProductsModel();
+		$products_model = new ProductsModel();
 		$result = $products_model->getData3();
 		$data_all['consoles'] = $result;
 
 
-		// print_r($data_all);
 		echo view ('common/headerUser');
 		echo view ('gamesView', $data_all);
 		echo view ('common/footer');
@@ -151,20 +145,6 @@ class Home extends BaseController
 	}
 
 
-
-
-	public function customerSession(){
-		//$session = \Config\Services::session();
-		$orders_model = new OrdersModel();
-		$data = $this->session->get();
-		$data['orders'] = $orders_model->getOrdersbyCustomer($data['id']);
-
-		echo view ('common/headerUser');
-		echo view ('ordersView',$data);
-		echo view ('common/footer');
-	}
-
-
 	public function insertOrder(){
 		$customers_model = new CustomersModel();
 		$result = $customers_model->getData();
@@ -173,7 +153,6 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
 		$result2 = $products_model->getData();
 		$data['products'] = $result2;
-		// print_r($data['products']);
 		echo view ('common/headerUser');
 		echo view ('insertOrderView', $data);
 		echo view ('common/footer');
@@ -191,33 +170,28 @@ class Home extends BaseController
 
 
 	public function editOrderToDB($idorder){
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];
-		$orders_model = new OrdersModel();
 
-		// if ($this->validate($rules)){
+		$orders_model = new OrdersModel();
+		$products_model = new ProductsModel();
+
 			$data = array(
 
 				'email' => $this->request->getVar('customerIDform'),
 				'quantidade' => $this->request->getVar('qnt'),
+				'idproduto' => $this->request->getVar('idproduto'),
 
 			);
-			
-			print_r($data);
-			print_r($idorder);
-			// $email = $data['customer_id'];
-			// print_r($email);
-			$result = $orders_model->update_order($idorder, $data);
+
+
+				if($products_model->verificar($data) !== false){
+				$result = $orders_model->update_order($idorder, $data);
+				$products_model->update_quantidade($data);
+			}else{
+			return redirect()->to('error');
+			}
 			
  			return redirect()->to(base_url('home'));
-			
-		// }
-		// else{
-			// $this->editOrder($idproduto);	
-					
-		// }
+
 
 	}
 
@@ -226,7 +200,6 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData4($string);
         $data_all['products'] = $data_products;
-		// print_r($string);
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
 		echo view ('common/footer');
@@ -239,7 +212,6 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
         $data_products = $products_model->getData5($string);
         $data_all['products'] = $data_products;
-		// print_r($string);
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
 		echo view ('common/footer');
@@ -255,16 +227,15 @@ class Home extends BaseController
 
 
 		
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data_all['categorias'] = $result;
 
-				$products_model = new ProductsModel();
+		$products_model = new ProductsModel();
 		$result = $products_model->getData3();
 		$data_all['consoles'] = $result;
 
 
-		// print_r($string);
 		echo view ('common/headerUser');
 		echo view ('gamesView', $data_all);
 		echo view ('common/footer');
@@ -280,16 +251,15 @@ class Home extends BaseController
 
 
 		
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data_all['categorias'] = $result;
 
-				$products_model = new ProductsModel();
+		$products_model = new ProductsModel();
 		$result = $products_model->getData3();
 		$data_all['consoles'] = $result;
 
 
-		// print_r($string);
 		echo view ('common/headerUser');
 		echo view ('gamesView', $data_all);
 		echo view ('common/footer');
@@ -304,7 +274,6 @@ class Home extends BaseController
 		$result = $customers_model->getData($email);
 		$data['clientes'] = $result;
 
-		// print_r($result);
 		
 		echo view ('common/headerUser');
 		echo view ('editClienteView',$data);
@@ -313,13 +282,9 @@ class Home extends BaseController
 
 
 	public function editClienteToDB($email){
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];
+
 		$customers_model = new CustomersModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'email' => $this->request->getVar('email'),
@@ -333,12 +298,7 @@ class Home extends BaseController
 			$result = $customers_model->update_customer($email, $data);
 			
  			return redirect()->to(base_url('home'));
-			
-		// }
-		// else{
-			// $this->editOrder($idproduto);	
-					
-		// }
+
 
 	}
 
@@ -347,12 +307,10 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
 
 		
-            $string = $this->request->getVar('search');
-			// print_r($string);
+        $string = $this->request->getVar('search');
 		$result = $products_model->getData2($string);
 		$data['products'] = $result;
 
-		// print_r($data);
 		
 		echo view ('common/headerUser');
 		echo view ('productsView',$data);
@@ -364,22 +322,20 @@ class Home extends BaseController
 		$products_model = new ProductsModel();
 
 		
-            $string = $this->request->getVar('search');
-			// print_r($string);
+        $string = $this->request->getVar('search');
 		$result = $products_model->getData2($string);
 		$data['products'] = $result;
 
 		
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data['categorias'] = $result;
 
-				$products_model = new ProductsModel();
+		$products_model = new ProductsModel();
 		$result = $products_model->getData3();
 		$data['consoles'] = $result;
 
 
-		// print_r($data);
 		
 		echo view ('common/headerUser');
 		echo view ('gamesView',$data);
@@ -387,18 +343,18 @@ class Home extends BaseController
 	}
 
 
-			public function categorysearch($id){
+		public function categorysearch($id){
 		$products_model = new ProductsModel();
 		$result = $products_model->getCategory($id);
 		$data['products'] = $result;
 
 
 		
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data['categorias'] = $result;
 
-				$products_model = new ProductsModel();
+		$products_model = new ProductsModel();
 		$result = $products_model->getData3();
 		$data['consoles'] = $result;
 
@@ -421,35 +377,13 @@ class Home extends BaseController
 		$data['consoles'] = $result;
 
 		
-			$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data['categorias'] = $result;
-		// print_r($result)
 		echo view ('common/headerUser');
 		echo view ('gamesView',$data);
 		echo view ('common/footer');
 	}
-
-	// public function orderby($string){
-
-		  
-    //     $customers_model = new CustomersModel();
-	// 	$orders_model = new OrdersModel();
-    //     $data_customers = $customers_model->getData2();
-    //     $data_orders = $orders_model->getData($string);
-    //           		$orders_model2 = new OrdersModel();
-    //       $data_orders2 = $orders_model2->getTotal();
-
-    //     $data_all['customers'] = $data_customers;
-    //     $data_all['orders'] = $data_orders;
-	// 	$data_all['total'] = $data_orders2;
-
-	// 	// print_r($result)
-	// 	echo view ('common/headerUser');
-	// 	echo view ('ordersView',$data_all);
-	// 	echo view ('common/footer');
-	// }
-
 
 
 	
@@ -459,12 +393,11 @@ class Home extends BaseController
 		$data['produtos'] = $result;
 
 
-				$categories_model = new CategoriesModel();
+		$categories_model = new CategoriesModel();
 		$result = $categories_model->getData();
 		$data['categorias'] = $result;
 
 
-		// print_r($result);
 		
 		echo view ('common/headerUser');
 		echo view ('editProductsView',$data);
@@ -473,13 +406,9 @@ class Home extends BaseController
 
 
 	public function editProdutoToDB($id){
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];
+
 		$products_model = new ProductsModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'nome' => $this->request->getVar('nome'),
@@ -495,13 +424,8 @@ class Home extends BaseController
 
 			$result = $products_model->update_product($id, $data);
 			
- 			return redirect()->to(base_url('home'));
-			
-		// }
-		// else{
-			// $this->editOrder($idproduto);	
-					
-		// }
+			return redirect()->to(base_url('home'));
+		
 
 	}
 
@@ -513,7 +437,6 @@ class Home extends BaseController
 		$result = $categories_model->getData($id);
 		$data['categorias'] = $result;
 
-		// print_r($result);
 		
 		echo view ('common/headerUser');
 		echo view ('editCategoriesView',$data);
@@ -522,13 +445,9 @@ class Home extends BaseController
 
 
 	public function editCategoriaToDB($id){
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];
+
 		$categories_model = new CategoriesModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'nome' => $this->request->getVar('nome'),
@@ -539,11 +458,7 @@ class Home extends BaseController
 			
  			return redirect()->to(base_url('home'));
 			
-		// }
-		// else{
-			// $this->editOrder($idproduto);	
-					
-		// }
+
 
 	}
 
@@ -551,31 +466,20 @@ class Home extends BaseController
 	public function insertOrderToDB(){
 
 
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];// revisar
 
 		$orders_model = new OrdersModel();
 		$products_model = new ProductsModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'email' =>  $this->request->getVar('clientes'),
 				'idproduto' => $this->request->getVar('produtos'),
 				'quantidade' => $this->request->getVar('qnt'),
-				// 'quantidademax' => $this->request->getVar('produtos'),
 
 
 
 			);
-			
-			// print_r($data['quantidademax']);			
 
-			// if($data['quantidade'] > $data['quantidademax']){
-			// 	echo 'erro';
-			// }
 			if($products_model->verificar($data) !== false){
 				$orders_model->insert_order($data);
 				$products_model->update_quantidade($data);
@@ -584,87 +488,51 @@ class Home extends BaseController
 			}
 
  			return redirect()->to(base_url('home'));
-			
-		// }
-		// else{
-			// $this->insertOrder($customer_id);	
-					
-		// }
+
 	}
 
 
 	public function insertProduct(){
 
 
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];// revisar
 
 		$products_model = new ProductsModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'id' =>  '',
-
 				'nome' => $this->request->getVar('nome'),
-
 				'tipo' => $this->request->getVar('tipo'),
-				
 				'categoria' => $this->request->getVar('categoria'),
-
 				'qnt' => $this->request->getVar('qnt'),
-
 				'console' => $this->request->getVar('console'),
-
 				'preco' => $this->request->getVar('preco'),
-
 				'imagem' => $this->request->getVar('imagem'),
-
 
 			);
 			
 
 			$products_model->insert_products($data);
 			return redirect()->to('/home');
-			
-		// }
-		// else{
-			// $this->insertOrder($customer_id);	
-					
-		// }
+
 	}
 
 
 	public function insertCategory(){
 
 
-		// $rules = [
-		// 	'description' => 'required|min_length[3]|max_length[255]',
-		// 	'amount' => 'required', 
-		// ];// revisar
-
 		$categories_model = new CategoriesModel();
 
-		// if ($this->validate($rules)){
 			$data = array(
 
 				'id' =>  '',
-
 				'nome' => $this->request->getVar('nome'),
 
 			);
 			
-
 			$categories_model->insert_categories($data);
 			return redirect()->to('/home');
-			
-		// }
-		// else{
-			// $this->insertOrder($customer_id);	
-					
-		// }
+
 	}
 
 
@@ -738,7 +606,7 @@ class Home extends BaseController
 	} 
 
 
-				public function removeCategoria($id=null){
+		public function removeCategoria($id=null){
 		
 		if ($id==null){
 			return redirect()->to('home');
@@ -762,45 +630,25 @@ class Home extends BaseController
 
 	public function insertData(){
 
-		// $rules = [
-		// 	'nome' => 'required|min_length[3]|max_length[50]',
-		// 	'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[customers.email]',
-		// 	'datanascimento' => 'required',
-		// 	'cidade' => 'required'
-		// ];
 
-		// Codeigniter 3: $this->load->model("CustomersModel");
 		$customers_model = new CustomersModel();
-		// Codeigniter 3: $this->load->library("session");
-//		$session = \Config\Services::session();
 
-		// codeignter 3 : $this->input->post("...");
-
-		// if ($this->validate($rules)){
 			$data = array(
 
 
 				'nome' => $this->request->getVar('nome'),
-				
 				'email' => $this->request->getVar('email'),
-				
 				'datanascimento' => $this->request->getVar('datanascimento'),
-
 				'cidade' => $this->request->getVar('cidade'),
-
 				'senha' => ''
-
 
 			);
 			$customers_model->insert_data_login($data);
 
 			return redirect()->to('/home');
-			
-		// }
-		// else{
+
 			$this->registration();	
-					
-		// }
+
 		
 	}
 

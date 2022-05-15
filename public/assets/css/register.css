@@ -5,27 +5,34 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;}
 .bg-light {
-    background-color: rgb(122, 79, 145) !important;
+    background-color: rgb(171, 209, 167) !important;
 }
 body{
     background-color: rgb(231, 231, 231);
     text-align: center;
 }
+
+
 h1{
-    margin-top: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 ol{
+    border: 2px #fff solid;
+    display: inline-block;
     margin-bottom: 0;
+    max-width: min-content;
 }
 
 img{
     height: 90px;
     width: 90px;
+    border-radius: 5px;
 }
 li{
     display: inline-block;
     padding: 13px;
-    list-style-position: inside;
+    /* list-style-position: inside; */
 }
 
 .table td,
@@ -33,12 +40,40 @@ li{
     border-collapse: collapse !important;
     border-top: 0ch;
     text-align: center;
+    vertical-align:0%;
 }
+
+
 
 .table{
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
 }
+
+
+.table2 td{
+        text-align: left;
+
+}
+
+.table2 td,
+.table2 th {
+    border-collapse: collapse !important;
+    border-top: 0ch;
+    vertical-align: 0%;
+    padding: 5px;
+}
+
+
+
+.table2 {
+    width: 120%;
+    margin: 0 auto;
+    margin-top: 5px;
+    /* margin-bottom: 20px; */
+}
+
 
 h3{
     margin-left: 11%;
@@ -47,4 +82,31 @@ h3{
 
 .col-md-4{
     margin: auto;
+}
+
+a:hover {
+    color: rgb(74, 167, 116);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+.logo :hover {
+    color: rgb(17, 100, 38);
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.main{
+    float: right;
+    width: 80%;
+}
+.side{
+    float: left;
+    width: 20%;
+    text-align: left;
+    padding-left: 5%;
 }
