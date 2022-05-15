@@ -19,7 +19,7 @@
             <h4><?php echo 'R$'.$orders['preco']. ' cada' ?></h4>
 
             <label for="emailInputLabel">Quantidade:</label>
-            <input type="text" class="form-control" id="emailInputLabel" name = "qnt" value="<?php echo $orders['qnt']?>">
+            <input type="number" class="form-control" id="emailInputLabel" name = "qnt"  min="1" value="<?php echo $orders['qnt']?>">
           </div>
         </div>   
         <input type = "hidden" id="inputHidden" name="customerIDform" value="<?php echo $orders['email']?>">
