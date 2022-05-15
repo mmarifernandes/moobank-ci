@@ -638,12 +638,10 @@ class Home extends BaseController
 
 				'nome' => $this->request->getVar('nome'),
 				'email' => $this->request->getVar('email'),
-				'datanascimento' => $this->request->getVar('datanascimento'),
 				'cidade' => $this->request->getVar('cidade'),
-				'senha' => ''
 
 			);
-			$customers_model->insert_data_login($data);
+			$customers_model->insertcliente($data);
 
 			return redirect()->to('/home');
 

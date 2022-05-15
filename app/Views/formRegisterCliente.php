@@ -34,12 +34,6 @@
             <input type="text" class="form-control" id="emailInputLabel" name = "email" required>
           </div>
         </div>
-          <div class="form-group">
-          <div class="col-md-4 mb-3">
-            <label for="DNascimento">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="datanascimento" name = "datanascimento" required>
-          </div>
-        </div>
         <div class="form-group">
           <div class="col-md-4 mb-3">
             <label for="cidade">Cidade:</label>

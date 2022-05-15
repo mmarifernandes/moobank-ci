@@ -7,7 +7,7 @@ class CustomersModel extends Model {
 
     protected $table = 'clientes';
     protected $primaryKey = 'email';
-    protected $allowedFields = ['nome', 'email', 'cidade', 'email', 'senha'];
+    protected $allowedFields = ['nome', 'email', 'cidade', 'email'];
 
     public function getData($email = null){
         if ($email == null){
@@ -31,14 +31,11 @@ class CustomersModel extends Model {
 
     }
 
-    public function insert_data_login($data)
+    public function insertcliente($data)
     {            
         return $this->insert($data);
     }
 
-    public function checkUserPassword($data){
-        return $this->where(['email' => $data['email'], 'senha' => $data['senha']])->first();
-    }
 
 
 
