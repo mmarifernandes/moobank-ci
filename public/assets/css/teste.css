@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-*{
-font-family: 'Inter', sans-serif;}
-html {
-  background-color: #f4f4f4;
+
+* {
+    font-family: 'Inter', sans-serif;
 }
+
+html {
+    background-color: #f4f4f4;
+ height: 100%;
+}
+
 html p {
     margin: 0;
 }
@@ -11,82 +16,104 @@ html p {
 html h3 {
     margin: 0;
 }
+
 button {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .botao1 button {
-  width: 30%;
-  height: 15vw;
-  border-radius: 19px;
-  margin: 8px;
+    width: 29.5%;
+    height: 15vw;
+    border-radius: 19px;
+    margin: 8px;
 
 }
 
-.botao1{
+.botao1 {
     margin-left: 5%;
 
 }
-button{
+
+button {
     box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
     border: none;
+    text-align: center;
 }
 
 .header nav {
     margin: 0;
-  height: 10vw;
-  background-color: #0facde;
-  margin-bottom: 40px;
+    height: 10vw;
+    background-color: #0facde;
+    margin-bottom: 40px;
+}
+
+i {
+    font-size: 40px;
 }
 
 
 .transfer button {
-  width: 90%;
-  height: 7vw;
-  border-radius: 19px;
-  margin: 8px;
-        margin-left: 6%;
+    width: 89%;
+    height: 7vw;
+    border-radius: 19px;
+    margin: 8px;
+    margin-left: 6%;
 
 }
 
 .corrente {
-  background-color: #fff;
-  display: inline-block;
-  border-radius: 19px;
-  width: 44%;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 19px;
+    width: 44%;
     box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
-  margin: 8px;
-  margin-left: 6%;
+    margin: 8px;
+    margin-left: 6%;
+    text-align: center;
+    height: 10vw;
+        margin-bottom: 45px;
 
 
+}
+
+body {
+    margin: 0;
 }
 
 .poupanca {
-  background-color: #fff;
-  display: inline-block;
-  border-radius: 19px;
-    width: 44%;
-
-      box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
-
-
-}
-.container{
     background-color: #fff;
-        box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
-        height: 32vw;
-  border-radius: 19px;
-  width: 95%;
-  margin: 8px;
+    display: inline-block;
+    border-radius: 19px;
+    width: 44%;
+    height: 10vw;
+    text-align: center;
+
+    box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+        margin-bottom: 45px;
+
 
 }
 
-.right{
+.container {
+    background-color: #fff;
+    box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+    height: 32vw;
+    border-radius: 19px;
+    width: 90%;
+    margin: 8px;
+    padding-top: 30px;
+    padding-left: 30px;
+        margin-bottom: 45px;
+
+}
+
+.right {
     float: right;
     width: 50%;
     align-items: center;
 }
-.left{
+
+.left {
     float: left;
     width: 50%;
     align-items: center;
