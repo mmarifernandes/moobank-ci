@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+font-family: 'Inter', sans-serif;}
+html {
+  background-color: #f4f4f4;
+}
+html p {
+    margin: 0;
+}
+
+html h3 {
+    margin: 0;
+}
+button {
+  background-color: #fff;
+}
+
+.botao1 button {
+  width: 30%;
+  height: 15vw;
+  border-radius: 19px;
+  margin: 8px;
+
+}
+
+.botao1{
+    margin-left: 5%;
+
+}
+button{
+    box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.header nav {
+    margin: 0;
+  height: 10vw;
+  background-color: #0facde;
+  margin-bottom: 40px;
+}
+
+
+.transfer button {
+  width: 90%;
+  height: 7vw;
+  border-radius: 19px;
+  margin: 8px;
+        margin-left: 6%;
+
+}
+
+.corrente {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 19px;
+  width: 44%;
+    box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+  margin: 8px;
+  margin-left: 6%;
+
+
+}
+
+.poupanca {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 19px;
+    width: 44%;
+
+      box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+
+
+}
+.container{
+    background-color: #fff;
+        box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+        height: 32vw;
+  border-radius: 19px;
+  width: 95%;
+  margin: 8px;
+
+}
+
+.right{
+    float: right;
+    width: 50%;
+    align-items: center;
+}
+.left{
+    float: left;
+    width: 50%;
+    align-items: center;
+}

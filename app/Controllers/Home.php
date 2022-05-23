@@ -42,6 +42,14 @@ class Home extends BaseController
 
 	}
 
+		public function menu()
+	{
+		// echo view ('common/headerUser');
+		echo view ('menu');
+		// echo view ('common/footer');
+
+	}
+
 		public function registrationproduto()
 	{
 		echo view ('common/headerUser');

@@ -48,6 +48,9 @@ $routes->add('gamesview', 'Home::gamesView');
 $routes->add('categoriesview', 'Home::categoriesView');
 
 
+$routes->add('menu', 'Home::menu');
+
+
 $routes->add('edit/(:num)','Home::editOrder/$1');
 $routes->add('editorder/(:num)','Home::editOrderToDB/$1');
 $routes->add('editc/(:any)','Home::editCliente/$1');
