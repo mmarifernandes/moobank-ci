@@ -21,12 +21,30 @@ button {
     background-color: #fff;
 }
 
+.botao1 :hover {
+    background-color: #FF428A;
+}
+
+.transfer :hover {
+    background-color: #FF428A;
+}
+
+
+.corrente :hover {
+    color: #0facde;
+}
+
+.poupanca :hover {
+    color: #0facde;
+}
+
+
 .botao1 button {
     width: 29.5%;
     height: 15vw;
     border-radius: 19px;
     margin: 8px;
-
+    font-size: 15px;
 }
 
 .botao1 {
@@ -38,17 +56,29 @@ button {
     box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
     border: none;
     text-align: center;
+    transition-duration: 0.4s;
+
 }
 
 .header nav {
     margin: 0;
-    height: 10vw;
+    height: 9vw;
     background-color: #0facde;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+
 }
 
 i {
     font-size: 40px;
+}
+
+nav h4{
+    margin: 0;
+    margin-left: 20%;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 
@@ -58,8 +88,14 @@ i {
     border-radius: 19px;
     margin: 8px;
     margin-left: 6%;
+    font-size: 15px;
+    
 
 }
+.transfer i{
+    margin-bottom: 5px;
+}
+
 
 .corrente {
     background-color: #fff;
@@ -71,7 +107,7 @@ i {
     margin-left: 6%;
     text-align: center;
     height: 10vw;
-        margin-bottom: 45px;
+        margin-bottom: 30px;
 
 
 }
@@ -89,7 +125,7 @@ body {
     text-align: center;
 
     box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
-        margin-bottom: 45px;
+        margin-bottom: 30px;
 
 
 }
@@ -103,7 +139,7 @@ body {
     margin: 8px;
     padding-top: 30px;
     padding-left: 30px;
-        margin-bottom: 45px;
+        margin-bottom: 30px;
 
 }
 
