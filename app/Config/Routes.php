@@ -49,6 +49,8 @@ $routes->add('categoriesview', 'Home::categoriesView');
 
 
 $routes->add('menu', 'Home::menu');
+$routes->add('login', 'Home::login');
+$routes->add('signup', 'Home::signup');
 
 
 $routes->add('edit/(:num)','Home::editOrder/$1');

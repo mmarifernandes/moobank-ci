@@ -50,6 +50,22 @@ class Home extends BaseController
 
 	}
 
+			public function login()
+	{
+		// echo view ('common/headerUser');
+		echo view ('login');
+		// echo view ('common/footer');
+
+	}
+
+				public function signup()
+	{
+		// echo view ('common/headerUser');
+		echo view ('signup');
+		// echo view ('common/footer');
+
+	}
+
 		public function registrationproduto()
 	{
 		echo view ('common/headerUser');
