@@ -413,8 +413,8 @@ CRITICAL - 2022-04-22 14:40:08 --> Invalid argument supplied for foreach()
 #10 {main}
 CRITICAL - 2022-04-22 14:50:52 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(14): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(55): App\Models\CustomersModel->getData(NULL)
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(14): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(55): App\Models\UsuariosModel->getData(NULL)
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrder()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -423,8 +423,8 @@ CRITICAL - 2022-04-22 14:50:52 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 14:59:55 --> Call to a member function getFirstRow() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(25): CodeIgniter\BaseModel->first()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(227): App\Models\CustomersModel->checkUserPassword(Array)
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(25): CodeIgniter\BaseModel->first()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(227): App\Models\UsuariosModel->checkUserPassword(Array)
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->loginUser()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -433,8 +433,8 @@ CRITICAL - 2022-04-22 14:59:55 --> Call to a member function getFirstRow() on bo
 #8 {main}
 CRITICAL - 2022-04-22 15:03:17 --> Call to a member function getFirstRow() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(25): CodeIgniter\BaseModel->first()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(232): App\Models\CustomersModel->checkUserPassword(Array)
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(25): CodeIgniter\BaseModel->first()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(232): App\Models\UsuariosModel->checkUserPassword(Array)
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->loginUser()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -487,8 +487,8 @@ CRITICAL - 2022-04-22 15:04:51 --> syntax error, unexpected 'App' (T_STRING)
 #9 {main}
 CRITICAL - 2022-04-22 15:22:15 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -497,8 +497,8 @@ CRITICAL - 2022-04-22 15:22:15 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:22:26 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -507,8 +507,8 @@ CRITICAL - 2022-04-22 15:22:26 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:23:05 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -517,8 +517,8 @@ CRITICAL - 2022-04-22 15:23:05 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:23:29 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -527,8 +527,8 @@ CRITICAL - 2022-04-22 15:23:29 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:23:38 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -537,8 +537,8 @@ CRITICAL - 2022-04-22 15:23:38 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:23:49 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -547,8 +547,8 @@ CRITICAL - 2022-04-22 15:23:49 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:23:52 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(14): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\OrdersModel->getData()
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(14): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\ContaModel->getData()
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Admin->home()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -557,8 +557,8 @@ CRITICAL - 2022-04-22 15:23:52 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:27:11 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -567,8 +567,8 @@ CRITICAL - 2022-04-22 15:27:11 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:27:29 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -577,8 +577,8 @@ CRITICAL - 2022-04-22 15:27:29 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:33:41 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -587,8 +587,8 @@ CRITICAL - 2022-04-22 15:33:41 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:33:45 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -597,8 +597,8 @@ CRITICAL - 2022-04-22 15:33:45 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:33:56 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(30): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\OrdersModel->getOrdersbyCustomer('11')
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(30): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(45): App\Models\ContaModel->getOrdersbyCustomer('11')
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -607,8 +607,8 @@ CRITICAL - 2022-04-22 15:33:56 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:35:12 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(14): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\OrdersModel->getData()
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(14): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\ContaModel->getData()
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Admin->home()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -617,8 +617,8 @@ CRITICAL - 2022-04-22 15:35:12 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:37:53 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(14): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\OrdersModel->getData()
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(14): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\ContaModel->getData()
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Admin->home()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -627,8 +627,8 @@ CRITICAL - 2022-04-22 15:37:53 --> Call to a member function getResult() on bool
 #8 {main}
 CRITICAL - 2022-04-22 15:37:54 --> Call to a member function getResult() on bool
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(14): CodeIgniter\BaseModel->findAll()
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\OrdersModel->getData()
+#1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(14): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Admin.php(14): App\Models\ContaModel->getData()
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Admin->home()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -929,7 +929,7 @@ CRITICAL - 2022-04-22 16:33:13 --> Call to a member function getRow() on bool
 #7 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #9 {main}
-CRITICAL - 2022-04-22 17:01:19 --> Class 'App\Models\ProductsModel' not found
+CRITICAL - 2022-04-22 17:01:19 --> Class 'App\Models\ExtratoModel' not found
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertProduct()
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -975,8 +975,8 @@ CRITICAL - 2022-04-22 17:23:32 --> Invalid argument supplied for foreach()
 CRITICAL - 2022-04-22 17:50:10 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(132): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(132): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -986,8 +986,8 @@ CRITICAL - 2022-04-22 17:50:10 --> There is no data to insert.
 CRITICAL - 2022-04-22 17:51:27 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(132): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(132): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1116,8 +1116,8 @@ CRITICAL - 2022-04-22 18:06:38 --> Call to a member function post() on null
 CRITICAL - 2022-04-22 18:07:43 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(137): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(137): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1127,8 +1127,8 @@ CRITICAL - 2022-04-22 18:07:43 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:09:08 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1138,8 +1138,8 @@ CRITICAL - 2022-04-22 18:09:08 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:09:26 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1149,8 +1149,8 @@ CRITICAL - 2022-04-22 18:09:26 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:09:46 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1160,8 +1160,8 @@ CRITICAL - 2022-04-22 18:09:46 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:09:56 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(138): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1185,8 +1185,8 @@ CRITICAL - 2022-04-22 18:10:16 --> Call to a member function post() on null
 CRITICAL - 2022-04-22 18:10:40 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1196,8 +1196,8 @@ CRITICAL - 2022-04-22 18:10:40 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:11:08 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('aaaaa', 'insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert('aaaaa', true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert('aaaaa')
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\OrdersModel->insert_order('aaaaa')
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert('aaaaa')
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\ContaModel->insert_order('aaaaa')
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1207,8 +1207,8 @@ CRITICAL - 2022-04-22 18:11:08 --> Return value of CodeIgniter\BaseModel::transf
 CRITICAL - 2022-04-22 18:11:32 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(135): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1225,8 +1225,8 @@ CRITICAL - 2022-04-22 18:12:00 --> Call to a member function post() on null
 CRITICAL - 2022-04-22 18:12:56 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(136): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(136): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1236,8 +1236,8 @@ CRITICAL - 2022-04-22 18:12:56 --> There is no data to insert.
 CRITICAL - 2022-04-22 18:13:44 --> There is no data to insert.
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
-#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(21): CodeIgniter\Model->insert(Array)
-#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(136): App\Models\OrdersModel->insert_order(Array)
+#2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(21): CodeIgniter\Model->insert(Array)
+#3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(136): App\Models\ContaModel->insert_order(Array)
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertOrderToDB()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #6 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -1251,7 +1251,7 @@ CRITICAL - 2022-04-22 18:15:33 --> Call to a member function post() on null
 #3 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #5 {main}
-CRITICAL - 2022-04-22 18:22:08 --> Call to undefined method App\Models\OrdersModel::getOrdersbyCustomer
+CRITICAL - 2022-04-22 18:22:08 --> Call to undefined method App\Models\ContaModel::getOrdersbyCustomer
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(46): CodeIgniter\Model->__call('getOrdersbyCust...', Array)
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -1259,7 +1259,7 @@ CRITICAL - 2022-04-22 18:22:08 --> Call to undefined method App\Models\OrdersMod
 #4 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-04-22 18:22:15 --> Call to undefined method App\Models\OrdersModel::getOrdersbyCustomer
+CRITICAL - 2022-04-22 18:22:15 --> Call to undefined method App\Models\ContaModel::getOrdersbyCustomer
 #0 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(46): CodeIgniter\Model->__call('getOrdersbyCust...', Array)
 #1 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->customerSession()
 #2 C:\Users\Marina Fernandes\Downloads\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))

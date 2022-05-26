@@ -12,8 +12,17 @@
 
   <div class="header">
   <nav>
-    <h4 style="padding-top: 3%;">02309490234092000-10201-1</h4>
-    <h4>Marina Fernandes</h4>
+<?php
+    echo'<h4 style="padding-top: 3%;">'.$contac['numero'].'</h4>';
+?>
+        <?php $mysession = session()->get('nome'); ?>
+        <?php $mysessionuser = session()->get('username'); ?>
+
+    <h4><?php echo $mysession?></h4>
+    <form action="<?php echo base_url('logout');?>" method="post">
+    <input type="hidden" id="username" name="username" value="<?php echo $mysessionuser ?>">
+    <button style="margin-left: 5%" type="submit">Logout</button>
+    </form>
   </nav>
   </div>
 
@@ -34,11 +43,15 @@
     <br>
     Poupança
   </button>
-<button>
+
+
+  <button>
+  <a href="<?php echo base_url('extrato');?>">
   <i class="fa-solid fa-receipt"></i>
   <br>
   <br>
   Extrato
+</a>
 </button>
 </div>
 
@@ -52,22 +65,62 @@
 <div class="co">
 <div class="corrente">
   <h4 style="color: #FF428A;">Conta Corrente</h4>
-  <h2>1.2789.33</h2>
+ <?php     
+  // print_r($conta2);
+  echo'<h2>R$'.$contac['valor'].'</h2>';
+ 
+  ?>
 </div>
 <div class="poupanca">
   <h4 style="color: #FF428A;">Conta Poupança</h4>
-    <h2>1.2789.33</h2>
+   <?php     
+  // print_r($conta2);
+  echo'<h2>R$'.$contap['valor'].'</h2>';
+ 
+  ?>
 
 </div>
 </div>
 
 </div>
-
 
 <div class="right">
 <div class="container">
-<h3>Olá, Marina</h3>
-<h4 style="color: #757575; font-weight: lighter">Aqui estão suas últimas transações</h4>
+<h3>Olá, <?php echo $mysession?></h3>
+<h4 style="color: #757575; font-weight: lighter">Aqui estão suas últimas 5 transações</h4>
+
+
+
+  <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">DATA MOV.</th>
+        <th scope="col">ID</th>
+        <th scope="col">TIPO</th>
+        <th scope="col">DESC.</th>
+        <th scope="col">VALOR</th>
+    
+
+    </tr>
+  </thead>
+  
+  <tbody>
+   <?php 
+    foreach ($extrato as $item){
+      $date = date_create($item['data']);
+      echo '<tr><td>'.date_format($date,"d-m-Y").'</td>';
+      echo '<td>'.$item['id'].'</td>';
+      echo '<td>'.$item['tipopagamento'].'</td>';
+      echo '<td>'.$item['descricao'].'</td>';
+      echo '<td>R$'.$item['valor'].'</td></tr>';
+      
+    }
+    ?>
+
+  </tbody>
+</table> 
+
+
 </div>
 </div>
 </div>

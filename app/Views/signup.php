@@ -51,20 +51,20 @@ body{
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Cadastro</h3>
+              <h3 class="login-heading mb-4">Cadastre-se</h3>
 
               <!-- Sign In Form -->
-              <form>
+              <form action="registration" method="post">
                  <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="johndoe123">
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="johndoe123">
                   <label for="floatingInput">Nome completo</label>
                 </div>
                  <div class="form-floating mb-3">
-                  <input type="number" class="form-control" id="floatingInput" placeholder="johndoe123">
+                  <input type="number" class="form-control" id="deposito" name="deposito" placeholder="johndoe123">
                   <label for="floatingInput">Depósito inicial</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="johndoe123">
+                  <input type="text" class="form-control" id="username" name="username" placeholder="johndoe123">
                   <label for="floatingInput">Username</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -72,9 +72,11 @@ body{
                   <label for="floatingPassword">Criar senha</label>
                 </div>
                    <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <input type="password" class="form-control" id="senha" name="senha" placeholder="Password">
                   <label for="floatingPassword">Confirme a senha</label>
                 </div>
+
+                <input type="hidden" name="numero" value="1234">
 
                 <div class="form-check mb-3">
                   <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
@@ -86,7 +88,8 @@ body{
                 <div class="d-grid">
                   <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Cadastrar</button>
                   <div class="text-center">
-                    <a class="small" href="#">Forgot password?</a>
+                    Já tem conta? 
+                    <a class="small" href="<?php echo base_url('login');?>">Entrar</a>
                   </div>
                 </div>
 

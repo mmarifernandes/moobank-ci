@@ -1,15 +1,15 @@
 <?php namespace App\Controllers;
 use CodeIgniter\Controller;
-use App\Models\CustomersModel;
-use App\Models\OrdersModel;
+use App\Models\UsuariosModel;
+use App\Models\ContaModel;
 
 class Admin extends BaseController
 {
 	
 
 	public function home(){
-        $customers_model = new CustomersModel();
-        $data_customers = $customers_model->getData();
+        $usuarios_model = new UsuariosModel();
+        $data_customers = $usuarios_model->getData();
         $data_all['customers'] = $data_customers;
 
 		echo view ('common/headerUser');

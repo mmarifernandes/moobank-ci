@@ -48,9 +48,14 @@ $routes->add('gamesview', 'Home::gamesView');
 $routes->add('categoriesview', 'Home::categoriesView');
 
 
+
+$routes->add('registration', 'Home::registration');
 $routes->add('menu', 'Home::menu');
 $routes->add('login', 'Home::login');
 $routes->add('signup', 'Home::signup');
+$routes->add('loginuser','Home::loginUser');
+$routes->add('logout','Home::logout');
+$routes->add('extrato','Home::extrato');
 
 
 $routes->add('edit/(:num)','Home::editOrder/$1');

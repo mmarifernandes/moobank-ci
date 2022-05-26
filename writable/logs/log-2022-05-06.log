@@ -79,7 +79,7 @@ CRITICAL - 2022-05-06 07:46:07 --> syntax error, unexpected 'foreach' (T_FOREACH
 #7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #8 {main}
 CRITICAL - 2022-05-06 08:01:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -87,7 +87,7 @@ CRITICAL - 2022-05-06 08:01:28 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:01:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -95,7 +95,7 @@ CRITICAL - 2022-05-06 08:01:46 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:02:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -103,7 +103,7 @@ CRITICAL - 2022-05-06 08:02:02 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:02:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -111,7 +111,7 @@ CRITICAL - 2022-05-06 08:02:23 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:02:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -125,8 +125,8 @@ CRITICAL - 2022-05-06 08:02:51 --> Not unique table/alias: 'produtos'
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, `prod...', Array, false)
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
-#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(19): CodeIgniter\BaseModel->first()
-#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(19): CodeIgniter\BaseModel->first()
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #10 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -134,8 +134,8 @@ CRITICAL - 2022-05-06 08:02:51 --> Not unique table/alias: 'produtos'
 #12 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #13 {main}
 CRITICAL - 2022-05-06 08:03:06 --> Undefined variable: id
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -149,8 +149,8 @@ CRITICAL - 2022-05-06 08:03:22 --> Not unique table/alias: 'produtos'
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *, `prod...', Array, false)
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
-#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(19): CodeIgniter\BaseModel->first()
-#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(19): CodeIgniter\BaseModel->first()
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #10 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -158,8 +158,8 @@ CRITICAL - 2022-05-06 08:03:22 --> Not unique table/alias: 'produtos'
 #12 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #13 {main}
 CRITICAL - 2022-05-06 08:05:02 --> Undefined variable: builder
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 17, Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 17, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -167,7 +167,7 @@ CRITICAL - 2022-05-06 08:05:02 --> Undefined variable: builder
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
 CRITICAL - 2022-05-06 08:06:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -186,7 +186,7 @@ CRITICAL - 2022-05-06 08:09:58 --> syntax error, unexpected '->' (T_OBJECT_OPERA
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #9 {main}
 CRITICAL - 2022-05-06 08:29:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -194,7 +194,7 @@ CRITICAL - 2022-05-06 08:29:00 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:29:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -202,8 +202,8 @@ CRITICAL - 2022-05-06 08:29:22 --> Call to undefined method CodeIgniter\Database
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
 CRITICAL - 2022-05-06 08:29:48 --> Undefined variable: id
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -235,16 +235,16 @@ CRITICAL - 2022-05-06 08:30:22 --> Invalid argument supplied for foreach()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #10 {main}
 CRITICAL - 2022-05-06 08:31:09 --> Undefined variable: idproduto
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 19, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 08:31:24 --> Too few arguments to function App\Models\OrdersModel::getData(), 0 passed in C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php on line 60 and exactly 1 expected
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+CRITICAL - 2022-05-06 08:31:24 --> Too few arguments to function App\Models\ContaModel::getData(), 0 passed in C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php on line 60 and exactly 1 expected
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -276,8 +276,8 @@ CRITICAL - 2022-05-06 08:32:45 --> Illegal string offset 'idproduto'
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #10 {main}
 CRITICAL - 2022-05-06 08:33:31 --> Undefined variable: id
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 13, Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 13, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -291,8 +291,8 @@ CRITICAL - 2022-05-06 08:33:42 --> Unknown column 'clientes-produto.idproduto' i
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\OrdersModel.php(16): CodeIgniter\BaseModel->findAll()
-#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\OrdersModel->getData()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\ContaModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(60): App\Models\ContaModel->getData()
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #10 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -467,7 +467,7 @@ CRITICAL - 2022-05-06 12:55:41 --> Undefined variable: order
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #10 {main}
-CRITICAL - 2022-05-06 13:20:48 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:20:48 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -475,7 +475,7 @@ CRITICAL - 2022-05-06 13:20:48 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:21:45 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:21:45 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -483,7 +483,7 @@ CRITICAL - 2022-05-06 13:21:45 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:21:56 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:21:56 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -491,7 +491,7 @@ CRITICAL - 2022-05-06 13:21:56 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -499,7 +499,7 @@ CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -507,7 +507,7 @@ CRITICAL - 2022-05-06 13:22:50 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:51 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:51 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -515,7 +515,7 @@ CRITICAL - 2022-05-06 13:22:51 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -523,7 +523,7 @@ CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -531,7 +531,7 @@ CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -539,7 +539,7 @@ CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\CustomersModel::getData2
+CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\UsuariosModel::getData2
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('getData2', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -547,7 +547,7 @@ CRITICAL - 2022-05-06 13:22:59 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:24:37 --> Call to undefined method App\Models\CustomersModel::joinfunction
+CRITICAL - 2022-05-06 13:24:37 --> Call to undefined method App\Models\UsuariosModel::joinfunction
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('joinfunction', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -555,7 +555,7 @@ CRITICAL - 2022-05-06 13:24:37 --> Call to undefined method App\Models\Customers
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #6 {main}
-CRITICAL - 2022-05-06 13:25:34 --> Call to undefined method App\Models\CustomersModel::insert_teste
+CRITICAL - 2022-05-06 13:25:34 --> Call to undefined method App\Models\UsuariosModel::insert_teste
 #0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): CodeIgniter\Model->__call('insert_teste', Array)
 #1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
@@ -575,72 +575,72 @@ CRITICAL - 2022-05-06 13:30:52 --> Undefined variable: customers
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #10 {main}
-CRITICAL - 2022-05-06 13:32:59 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:32:59 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:33:18 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(23): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:33:18 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(23): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:33:34 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:33:34 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:36:16 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:36:16 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:36:17 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:36:17 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:37:50 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:37:50 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:37:56 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:37:56 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #7 {main}
-CRITICAL - 2022-05-06 13:38:36 --> Call to undefined method App\Models\CustomersModel::group_by
-#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(24): CodeIgniter\Model->__call('group_by', Array)
-#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+CRITICAL - 2022-05-06 13:38:36 --> Call to undefined method App\Models\UsuariosModel::group_by
+#0 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(24): CodeIgniter\Model->__call('group_by', Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #2 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
@@ -654,8 +654,8 @@ CRITICAL - 2022-05-06 13:39:12 --> Column 'email' in group statement is ambiguou
 #3 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
 #4 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
 #5 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
-#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\CustomersModel.php(27): CodeIgniter\BaseModel->findAll()
-#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\CustomersModel->getData2()
+#6 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Models\UsuariosModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(65): App\Models\UsuariosModel->getData2()
 #8 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->ordersview()
 #9 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
 #10 C:\Users\Marina Fernandes\Desktop\codeigniter marina\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)

@@ -1,9 +1,9 @@
 <?php namespace App\Controllers;
 use CodeIgniter\Controller;
-use App\Models\CustomersModel;
-use App\Models\OrdersModel;
-use App\Models\ProductsModel;
-use App\Models\CategoriesModel;
+use App\Models\UsuariosModel;
+use App\Models\ExtratoModel;
+use App\Models\AuditoriaModel;
+use App\Models\ContaModel;
 
 
 class Home extends BaseController
@@ -45,11 +45,34 @@ class Home extends BaseController
 		public function menu()
 	{
 		// echo view ('common/headerUser');
-		echo view ('menu');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$extrato_model = new ExtratoModel();
+
+
+		$data['extrato'] = $extrato_model->getData($data['username']);
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('menu', $data);
 		// echo view ('common/footer');
 
 	}
+			public function extrato()
+	{
+		// echo view ('common/headerUser');
+				$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$extrato_model = new ExtratoModel();
 
+
+		$data['extrato'] = $extrato_model->getData($data['username']);
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('extrato', $data);
+		// echo view ('common/footer');
+	}
 			public function login()
 	{
 		// echo view ('common/headerUser');
@@ -79,8 +102,8 @@ class Home extends BaseController
 	{
 
 
-			$categories_model = new CategoriesModel();
-        $data_categories = $categories_model->getData();
+			$conta_model = new ContaModel();
+        $data_categories = $conta_model->getData();
         $data_all['categories'] = $data_categories;
 
 		echo view ('common/headerUser');
@@ -91,8 +114,8 @@ class Home extends BaseController
 
 	public function clientesview()
 	{
-		$customers_model = new CustomersModel();
-        $data_customers = $customers_model->getData();
+		$usuarios_model = new UsuariosModel();
+        $data_customers = $usuarios_model->getData();
         $data_all['customers'] = $data_customers;
 
 		echo view ('common/headerUser');
@@ -104,9 +127,9 @@ class Home extends BaseController
 	public function ordersview()
 	{
 
-        $customers_model = new CustomersModel();
+        $usuarios_model = new UsuariosModel();
 		$orders_model = new OrdersModel();
-        $data_customers = $customers_model->getData2();
+        $data_customers = $usuarios_model->getData2();
         $data_orders = $orders_model->getData();
         $orders_model2 = new OrdersModel();
         $data_orders2 = $orders_model2->getTotal();
@@ -124,8 +147,8 @@ class Home extends BaseController
 
 		public function productsview()
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData();
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData();
         $data_all['products'] = $data_products;
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
@@ -136,16 +159,16 @@ class Home extends BaseController
 
 		public function gamesview()
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData();
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData();
         $data_all['products'] = $data_products;
 
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data_all['categorias'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data_all['consoles'] = $result;
 
 
@@ -158,8 +181,8 @@ class Home extends BaseController
 
 		public function categoriesview()
 	{
-		$categories_model = new CategoriesModel();
-        $data_categories = $categories_model->getData();
+		$conta_model = new ContaModel();
+        $data_categories = $conta_model->getData();
         $data_all['categories'] = $data_categories;
 
 		echo view ('common/headerUser');
@@ -170,12 +193,12 @@ class Home extends BaseController
 
 
 	public function insertOrder(){
-		$customers_model = new CustomersModel();
-		$result = $customers_model->getData();
+		$usuarios_model = new UsuariosModel();
+		$result = $usuarios_model->getData();
 		$data['customers'] = $result;
 
-		$products_model = new ProductsModel();
-		$result2 = $products_model->getData();
+		$auditoria_model = new AuditoriaModel();
+		$result2 = $auditoria_model->getData();
 		$data['products'] = $result2;
 		echo view ('common/headerUser');
 		echo view ('insertOrderView', $data);
@@ -196,7 +219,7 @@ class Home extends BaseController
 	public function editOrderToDB($idorder){
 
 		$orders_model = new OrdersModel();
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 			$data = array(
 
@@ -207,9 +230,9 @@ class Home extends BaseController
 			);
 
 
-				if($products_model->verificar($data) !== false){
+				if($auditoria_model->verificar($data) !== false){
 				$result = $orders_model->update_order($idorder, $data);
-				$products_model->update_quantidade($data);
+				$auditoria_model->update_quantidade($data);
 			}else{
 			return redirect()->to('error');
 			}
@@ -221,8 +244,8 @@ class Home extends BaseController
 
 		public function quantidade($string)
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData4($string);
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData4($string);
         $data_all['products'] = $data_products;
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
@@ -233,8 +256,8 @@ class Home extends BaseController
 
 			public function preco($string)
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData5($string);
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData5($string);
         $data_all['products'] = $data_products;
 		echo view ('common/headerUser');
 		echo view ('productsView', $data_all);
@@ -245,18 +268,18 @@ class Home extends BaseController
 
 			public function quantidadeg($string)
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData4($string);
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData4($string);
         $data_all['products'] = $data_products;
 
 
 		
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data_all['categorias'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data_all['consoles'] = $result;
 
 
@@ -269,18 +292,18 @@ class Home extends BaseController
 
 			public function precog($string)
 	{
-		$products_model = new ProductsModel();
-        $data_products = $products_model->getData5($string);
+		$auditoria_model = new AuditoriaModel();
+        $data_products = $auditoria_model->getData5($string);
         $data_all['products'] = $data_products;
 
 
 		
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data_all['categorias'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data_all['consoles'] = $result;
 
 
@@ -294,8 +317,8 @@ class Home extends BaseController
 
 
 	public function editCliente($email){
-		$customers_model = new CustomersModel();
-		$result = $customers_model->getData($email);
+		$usuarios_model = new UsuariosModel();
+		$result = $usuarios_model->getData($email);
 		$data['clientes'] = $result;
 
 		
@@ -307,7 +330,7 @@ class Home extends BaseController
 
 	public function editClienteToDB($email){
 
-		$customers_model = new CustomersModel();
+		$usuarios_model = new UsuariosModel();
 
 			$data = array(
 
@@ -319,7 +342,7 @@ class Home extends BaseController
 
 			);
 
-			$result = $customers_model->update_customer($email, $data);
+			$result = $usuarios_model->update_customer($email, $data);
 			
  			return redirect()->to(base_url('home'));
 
@@ -328,11 +351,11 @@ class Home extends BaseController
 
 
 	public function searchProduct($string){
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 		
         $string = $this->request->getVar('search');
-		$result = $products_model->getData2($string);
+		$result = $auditoria_model->getData2($string);
 		$data['products'] = $result;
 
 		
@@ -343,20 +366,20 @@ class Home extends BaseController
 
 
 		public function searchGames($string){
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 		
         $string = $this->request->getVar('search');
-		$result = $products_model->getData2($string);
+		$result = $auditoria_model->getData2($string);
 		$data['products'] = $result;
 
 		
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data['categorias'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data['consoles'] = $result;
 
 
@@ -368,18 +391,18 @@ class Home extends BaseController
 
 
 		public function categorysearch($id){
-		$products_model = new ProductsModel();
-		$result = $products_model->getCategory($id);
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getCategory($id);
 		$data['products'] = $result;
 
 
 		
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data['categorias'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data['consoles'] = $result;
 
 		
@@ -392,17 +415,17 @@ class Home extends BaseController
 
 		public function consolesearch($string){
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getConsole($string);
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getConsole($string);
 		$data['products'] = $result;
 
-		$products_model = new ProductsModel();
-		$result = $products_model->getData3();
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData3();
 		$data['consoles'] = $result;
 
 		
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data['categorias'] = $result;
 		echo view ('common/headerUser');
 		echo view ('gamesView',$data);
@@ -412,13 +435,13 @@ class Home extends BaseController
 
 	
 	public function editProduto($id){
-		$products_model = new ProductsModel();
-		$result = $products_model->getData($id);
+		$auditoria_model = new AuditoriaModel();
+		$result = $auditoria_model->getData($id);
 		$data['produtos'] = $result;
 
 
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData();
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData();
 		$data['categorias'] = $result;
 
 
@@ -431,7 +454,7 @@ class Home extends BaseController
 
 	public function editProdutoToDB($id){
 
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 			$data = array(
 
@@ -446,7 +469,7 @@ class Home extends BaseController
 
 			);
 
-			$result = $products_model->update_product($id, $data);
+			$result = $auditoria_model->update_product($id, $data);
 			
 			return redirect()->to(base_url('home'));
 		
@@ -457,8 +480,8 @@ class Home extends BaseController
 
 	
 	public function editCategoria($id){
-		$categories_model = new CategoriesModel();
-		$result = $categories_model->getData($id);
+		$conta_model = new ContaModel();
+		$result = $conta_model->getData($id);
 		$data['categorias'] = $result;
 
 		
@@ -470,7 +493,7 @@ class Home extends BaseController
 
 	public function editCategoriaToDB($id){
 
-		$categories_model = new CategoriesModel();
+		$conta_model = new ContaModel();
 
 			$data = array(
 
@@ -478,7 +501,7 @@ class Home extends BaseController
 
 			);
 
-			$result = $categories_model->update_categoria($id, $data);
+			$result = $conta_model->update_categoria($id, $data);
 			
  			return redirect()->to(base_url('home'));
 			
@@ -492,7 +515,7 @@ class Home extends BaseController
 
 
 		$orders_model = new OrdersModel();
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 			$data = array(
 
@@ -504,9 +527,9 @@ class Home extends BaseController
 
 			);
 
-			if($products_model->verificar($data) !== false){
+			if($auditoria_model->verificar($data) !== false){
 				$orders_model->insert_order($data);
-				$products_model->update_quantidade($data);
+				$auditoria_model->update_quantidade($data);
 			}else{
 			return redirect()->to('error');
 			}
@@ -520,7 +543,7 @@ class Home extends BaseController
 
 
 
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
 			$data = array(
 
@@ -536,7 +559,7 @@ class Home extends BaseController
 			);
 			
 
-			$products_model->insert_products($data);
+			$auditoria_model->insert_products($data);
 			return redirect()->to('/home');
 
 	}
@@ -545,7 +568,7 @@ class Home extends BaseController
 	public function insertCategory(){
 
 
-		$categories_model = new CategoriesModel();
+		$conta_model = new ContaModel();
 
 			$data = array(
 
@@ -554,7 +577,7 @@ class Home extends BaseController
 
 			);
 			
-			$categories_model->insert_categories($data);
+			$conta_model->insert_categories($data);
 			return redirect()->to('/home');
 
 	}
@@ -590,12 +613,12 @@ class Home extends BaseController
 			return redirect()->to('home');
 		}
 
-		$products_model = new ProductsModel();
+		$auditoria_model = new AuditoriaModel();
 
-		$result = $products_model->getData($id);
+		$result = $auditoria_model->getData($id);
 
 		if ($result !=NULL){
-			$products_model->removeProduct($result['id']);		
+			$auditoria_model->removeProduct($result['id']);		
 			return redirect()->to(base_url('home'));
 			
 		}else{
@@ -614,12 +637,12 @@ class Home extends BaseController
 			return redirect()->to('home');
 		}
 
-		$customers_model = new CustomersModel();
+		$usuarios_model = new UsuariosModel();
 
-		$result = $customers_model->getData($email);
+		$result = $usuarios_model->getData($email);
 
 		if ($result !=NULL){
-			$customers_model->removeCustomer($result['Email']);		
+			$usuarios_model->removeCustomer($result['Email']);		
 			return redirect()->to(base_url('home'));
 			
 		}else{
@@ -636,12 +659,12 @@ class Home extends BaseController
 			return redirect()->to('home');
 		}
 
-		$categories_model = new CategoriesModel();
+		$conta_model = new ContaModel();
 
-		$result = $categories_model->getData($id);
+		$result = $conta_model->getData($id);
 
 		if ($result !=NULL){
-			$categories_model->removeCategory($result['id']);		
+			$conta_model->removeCategory($result['id']);		
 			return redirect()->to(base_url('home'));
 			
 		}else{
@@ -652,31 +675,121 @@ class Home extends BaseController
 	} 
 
 
-	public function insertData(){
+	public function registration(){
 
 
-		$customers_model = new CustomersModel();
+	$freq = [];
+	$number = rand(100,100000000000000000);
+	$times = 2;
+	while($times-- > 0)
+	{
+    while(in_array($number, $freq))$number = rand(100,100000000000000000);
+    $freq[] = $number;
+	}
+	$numeros = array( 'corrente' => $freq[0],
+					'poupanca' => $freq[1]);
+
+		$date =  date('Y-m-d H:i:s');
+		$usuarios_model = new UsuariosModel();
+		$conta_model = new ContaModel();
+		$auditoria_model = new AuditoriaModel();
 
 			$data = array(
-
-
+				'numero' => $numeros['corrente'],
+				'tipo' => 'Corrente',
+				'username' => $this->request->getVar('username'),
 				'nome' => $this->request->getVar('nome'),
-				'email' => $this->request->getVar('email'),
-				'cidade' => $this->request->getVar('cidade'),
+				'senha' => md5($this->request->getVar('senha')),
+				'valor' => $this->request->getVar('deposito'),
+			);
+
+			$data2 = array(
+				'numero' => $numeros['poupanca'],
+				'tipo' => 'Poupança',
+				'username' => $this->request->getVar('username'),
+			);
+			$data3 = array(
+				'dataLogin' => '',
+				'dataLogout' => '',
+				'username' => $this->request->getVar('username'),
 
 			);
-			$customers_model->insertcliente($data);
+			$usuarios_model->insertusuario($data);
+			$conta_model->insertcontac($data);
+			$conta_model->insertcontap($data2);
+			$auditoria_model->insertfirst($data3);
+			$this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
 
-			return redirect()->to('/home');
-
-			$this->registration();	
+			return redirect()->to('/login');
 
 		
 	}
 
+	public function loginUser(){
+		
+		// $rules = [
+		// 	'email' => 'required|min_length[6]|max_length[50]|valid_email',
+		// 	'password'=> 'required|min_length[5]|max_length[60]', 
+		// ];
 
+		$usuarios_model = new UsuariosModel();
+		$auditoria_model = new AuditoriaModel();
+		$date =  date('Y-m-d H:i:s');
+		// if ($this->validate($rules)){
+			$data = array(
 
+				'username' => $this->request->getVar('username'),
+				'senha' => $this->request->getVar('senha'),
+				'logged_in' => FALSE
 
+			);
+		
+				$data3 = array(
+
+				'dataLogin' => $date,
+				'username' => $this->request->getVar('username'),
+
+			);
+			if(!($userRow = $usuarios_model->checkUserPassword($data))){
+				$this->session->setFlashdata('loginFail',' Incorrect username or password.' );
+				return redirect()->to(base_url('login'));
+			}
+			else{
+				$data['logged_in'] = TRUE;
+				$data['username'] = $userRow['username'];
+				$data['nome'] = $userRow['nome'];
+				$auditoria_model->insertlogin($data3);
+
+				$this->session->set($data);
+					return redirect()->to(base_url('menu'));
+				}
+
+			// return view('login');
+	
+	} 
+
+	public function logout(){
+		$auditoria_model = new AuditoriaModel();
+		$date =  date('Y-m-d H:i:s');
+
+						$data3 = array(
+				'dataLogin',
+				'dataLogout' => $date,
+				'username' => $this->request->getVar('username'),
+
+			);
+			$auditoria_model->insertlogout($data3);
+//		$session = \Config\Services::session();
+		$data['logged_in'] = FALSE;
+		$data['username'] = "";
+		$data['nome']="";
+		$data['senha']="";
+
+		$this->session->destroy();
+		// $this->session->set($data);
+		return redirect()->to('/login'); 
+
+	}
 
 
 
