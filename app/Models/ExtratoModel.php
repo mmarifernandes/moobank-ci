@@ -23,17 +23,18 @@ class ExtratoModel extends Model {
     }
 
     
-    public function getData2($string = null){
+    public function getData2($username = null){
+      if ($username == null){
 
-        if ($string == null){
-              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-            return $this->findAll();
-        }
-          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-        return $this->asArray()->like('produtos.nome', $string)->findAll();
-    }
+          return $this->findAll();
+      }
+
+        $this->select('id, extrato.valor, extrato.tipo, conta, tipopagamento, descricao, data');
+          $this->join('conta', 'conta.numero = extrato.conta', 'left');
+                      $this->orderBy('data', 'desc'); // Produces: GROUP BY title
+
+      return $this->asArray()->where(['conta.username' => $username])->findAll();
+  }
 
       public function getData3($id = null){
         if ($id == null){

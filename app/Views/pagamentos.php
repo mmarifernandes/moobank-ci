@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="<?php echo base_url('/assets/css/teste2.css')?>">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/css/teste3.css')?>">
 <script src="https://kit.fontawesome.com/84a7caccb6.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -25,49 +25,42 @@
     </form>
   </nav>
   </div>
+
+
   <a href="<?php echo base_url('menu');?>">
   <i style="margin-left: 5%" class="fa-solid fa-arrow-left"></i>
   </a>
-  <div class="container">
-      
-<h3>Extrato</h3>
-<h4 style="color: #757575; font-weight: lighter; margin-bottom: 5px; margin-top: 5px">Aqui estão suas últimas transações</h4>
+  <h3>Pagamentos</h3>
+
+  <div class="botao1">
+
+<button class="button1">
+<a href="<?php echo base_url('pagamentos');?>">
+
+<i class="fa-brands fa-pix"></i>
+<br>
+<br>
+  Pix
+  </a>
+</button>
+
+<button>
+<i class="fa-solid fa-credit-card"></i>
+  <br>
+  <br>
+  Débito
+</button>
 
 
-
-  <table class="table">
-    <thead>
-        <tr>
-        <th scope="col">DATA MOV.</th>
-        <th scope="col">ID</th>
-        <th scope="col">TIPO</th>
-        <th scope="col">DESC.</th>
-        <th scope="col">VALOR</th>
-    
-
-    </tr>
-  </thead>
-  
-  <tbody>
-   <?php 
-    foreach ($extrato as $item){
-      $date = date_create($item['data']);
-      echo '<tr><td>'.date_format($date,"d-m-Y").'</td>';
-      echo '<td>'.$item['id'].'</td>';
-      echo '<td>'.$item['tipopagamento'].'</td>';
-      echo '<td>'.$item['descricao'].'</td>';
-      echo '<td>R$'.$item['valor'].'</td></tr>';
-      
-    }
-    ?>
-
-  </tbody>
-</table> 
-
-
+<button>
+<a href="<?php echo base_url('extrato');?>">
+<i class="fa-solid fa-money-check-dollar"></i>
+<br>
+<br>
+Boleto
+</a>
+</button>
 </div>
-
-
 
 
 </body>

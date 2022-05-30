@@ -31,10 +31,13 @@
 <div class="botao1">
 
   <button class="button1">
+  <a href="<?php echo base_url('pagamentos');?>">
+
   <i class="fa-solid fa-money-bill"></i>
   <br>
   <br>
     Pagamentos
+    </a>
   </button>
 
   <button>
@@ -87,7 +90,7 @@
 <div class="right">
 <div class="container">
 <h3>Olá, <?php echo $mysession?></h3>
-<h4 style="color: #757575; font-weight: lighter">Aqui estão suas últimas 5 transações</h4>
+<h4 style="color: #757575; font-weight: lighter; margin-bottom: 5px; margin-top: 5px">Aqui estão suas últimas 5 transações</h4>
 
 
 

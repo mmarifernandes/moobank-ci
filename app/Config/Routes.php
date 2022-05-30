@@ -56,6 +56,10 @@ $routes->add('signup', 'Home::signup');
 $routes->add('loginuser','Home::loginUser');
 $routes->add('logout','Home::logout');
 $routes->add('extrato','Home::extrato');
+$routes->add('pagamentos','Home::pagamentos');
+$routes->add('pagboleto','Home::pagboleto');
+$routes->add('pagdebito','Home::pagdebito');
+$routes->add('pagpix','Home::pagpix');
 
 
 $routes->add('edit/(:num)','Home::editOrder/$1');

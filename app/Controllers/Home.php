@@ -61,18 +61,39 @@ class Home extends BaseController
 			public function extrato()
 	{
 		// echo view ('common/headerUser');
-				$data = $this->session->get();
+		$data = $this->session->get();
 		$conta_model = new ContaModel();
 		$extrato_model = new ExtratoModel();
 
 
-		$data['extrato'] = $extrato_model->getData($data['username']);
+		$data['extrato'] = $extrato_model->getData2($data['username']);
 		$data['contac'] = $conta_model->getDataC($data['username']);
 		$data['contap'] = $conta_model->getDataP($data['username']);
 
 		echo view ('extrato', $data);
 		// echo view ('common/footer');
 	}
+
+
+
+	public function pagamentos()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$extrato_model = new ExtratoModel();
+
+
+		$data['extrato'] = $extrato_model->getData2($data['username']);
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('pagamentos', $data);
+		// echo view ('common/footer');
+	}
+
+
+
 			public function login()
 	{
 		// echo view ('common/headerUser');
