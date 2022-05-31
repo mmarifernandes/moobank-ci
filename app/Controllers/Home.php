@@ -26,22 +26,6 @@ class Home extends BaseController
 	}
 
 
-
-	public function registrationcategory()
-	{
-		echo view ('common/headerUser');
-		echo view ('formRegisterCategory');
-		echo view ('common/footer');
-	}
-
-	public function registrationcliente()
-	{
-		echo view ('common/headerUser');
-		echo view ('formRegisterCliente');
-		echo view ('common/footer');
-
-	}
-
 		public function menu()
 	{
 		// echo view ('common/headerUser');
@@ -51,13 +35,54 @@ class Home extends BaseController
 
 
 		$data['extrato'] = $extrato_model->getData($data['username']);
-		$data['contac'] = $conta_model->getDataC($data['username']);
-		$data['contap'] = $conta_model->getDataP($data['username']);
-
+		$data['contac'] = $extrato_model->getTotalC($data['username']);
+		$data['contap'] = $extrato_model->getTotalP($data['username']);
 		echo view ('menu', $data);
 		// echo view ('common/footer');
 
 	}
+
+
+
+		public function pagdebito()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['tipo'] = 'debito';
+		$data['contac'] = $conta_model->getDataC($data['username']);
+
+		echo view ('pagamentosdados', $data);
+		// echo view ('common/footer');
+
+	}
+			public function pagpix()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['tipo'] = 'pix';
+		$data['contac'] = $conta_model->getDataC($data['username']);
+
+		echo view ('pagamentosdados', $data);
+		// echo view ('common/footer');
+
+	}
+
+
+			public function pagboleto()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['tipo'] = 'boleto';
+		$data['contac'] = $conta_model->getDataC($data['username']);
+
+		echo view ('pagamentosdados', $data);
+		// echo view ('common/footer');
+
+	}
+
 			public function extrato()
 	{
 		// echo view ('common/headerUser');
@@ -69,8 +94,10 @@ class Home extends BaseController
 		$data['extrato'] = $extrato_model->getData2($data['username']);
 		$data['contac'] = $conta_model->getDataC($data['username']);
 		$data['contap'] = $conta_model->getDataP($data['username']);
-
-		echo view ('extrato', $data);
+		$data['extrato2'] = $extrato_model->getData3($data['username']);
+	$data['contac'] = $extrato_model->getTotalC($data['username']);
+		$data['contap'] = $extrato_model->getTotalP($data['username']);
+				echo view ('extrato', $data);
 		// echo view ('common/footer');
 	}
 
@@ -714,6 +741,7 @@ class Home extends BaseController
 		$usuarios_model = new UsuariosModel();
 		$conta_model = new ContaModel();
 		$auditoria_model = new AuditoriaModel();
+		$extrato_model = new ExtratoModel();
 
 			$data = array(
 				'numero' => $numeros['corrente'],
@@ -735,9 +763,31 @@ class Home extends BaseController
 				'username' => $this->request->getVar('username'),
 
 			);
+
+
+			$dataDepositoInicial = array(
+				'tipo' => 'Depósito Inicial',
+				'valor' => $this->request->getVar('deposito'),
+				'conta' => $numeros['corrente'],
+				'tipopagamento' => 'Depósito',
+				'descricao' => 'inicial',
+				'data' => $date,
+			);
+
+
+			$dataDepositoInicial2 = array(
+				'tipo' => 'Depósito Inicial }Poupança',
+				'valor' => '00.00',
+				'conta' => $numeros['poupanca'],
+				'tipopagamento' => 'Depósito',
+				'descricao' => 'poupança aberta',
+				'data' => $date,
+			);
 			$usuarios_model->insertusuario($data);
 			$conta_model->insertcontac($data);
 			$conta_model->insertcontap($data2);
+			$extrato_model->insertcontac($dataDepositoInicial);
+			$extrato_model->insertcontap($dataDepositoInicial2);
 			$auditoria_model->insertfirst($data3);
 			$this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
 

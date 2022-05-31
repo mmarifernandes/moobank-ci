@@ -25,12 +25,15 @@
     </form>
   </nav>
   </div>
+  <div>
   <a href="<?php echo base_url('menu');?>">
   <i style="margin-left: 5%" class="fa-solid fa-arrow-left"></i>
   </a>
+  </div>
+  <br>
   <div class="container">
       
-<h3>Extrato</h3>
+<h3>Extrato Conta Corrente</h3>
 <h4 style="color: #757575; font-weight: lighter; margin-bottom: 5px; margin-top: 5px">Aqui estão suas últimas transações</h4>
 
 
@@ -60,13 +63,64 @@
       
     }
     ?>
+<tr>
+    <td></td><td></td><td></td>
 
+  <td>
+    SALDO
+  </td>
+  <td>R$<?php echo $contac['total']?>  </td>
+</tr>
   </tbody>
 </table> 
 
 
 </div>
 
+ <div class="container2">
+      
+<h3>Extrato Conta Poupança</h3>
+<h4 style="color: #757575; font-weight: lighter; margin-bottom: 5px; margin-top: 5px">Aqui estão suas últimas transações</h4>
+
+
+
+  <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">DATA MOV.</th>
+        <th scope="col">ID</th>
+        <th scope="col">TIPO</th>
+        <th scope="col">DESC.</th>
+        <th scope="col">VALOR</th>
+    
+
+    </tr>
+  </thead>
+  
+  <tbody>
+   <?php 
+    foreach ($extrato2 as $item){
+      $date = date_create($item['data']);
+      echo '<tr><td>'.date_format($date,"d-m-Y").'</td>';
+      echo '<td>'.$item['id'].'</td>';
+      echo '<td>'.$item['tipopagamento'].'</td>';
+      echo '<td>'.$item['descricao'].'</td>';
+      echo '<td>R$'.$item['valor'].'</td></tr>';
+      
+    }
+    ?>
+<tr>
+  <td></td><td></td><td></td>
+  <td>
+    SALDO
+  </td>
+  <td>R$<?php echo $contap['total']?>  </td>
+</tr>
+  </tbody>
+</table> 
+
+
+</div>
 
 
 

@@ -14,6 +14,7 @@
   <nav>
 <?php
     echo'<h4 style="padding-top: 3%;">'.$contac['numero'].'</h4>';
+
 ?>
         <?php $mysession = session()->get('nome'); ?>
         <?php $mysessionuser = session()->get('username'); ?>
@@ -70,7 +71,7 @@
   <h4 style="color: #FF428A;">Conta Corrente</h4>
  <?php     
   // print_r($conta2);
-  echo'<h2>R$'.$contac['valor'].'</h2>';
+  echo'<h2>R$'.$contac['total'].'</h2>';
  
   ?>
 </div>
@@ -78,7 +79,7 @@
   <h4 style="color: #FF428A;">Conta Poupança</h4>
    <?php     
   // print_r($conta2);
-  echo'<h2>R$'.$contap['valor'].'</h2>';
+  echo'<h2>R$'.$contap['total'].'</h2>';
  
   ?>
 

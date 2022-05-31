@@ -30,12 +30,12 @@
   <a href="<?php echo base_url('menu');?>">
   <i style="margin-left: 5%" class="fa-solid fa-arrow-left"></i>
   </a>
-  <h3>Pagamentos</h3>
+  <h3>Método de pagamento:</h3>
 
   <div class="botao1">
 
 <button class="button1">
-<a href="<?php echo base_url('pagamentos');?>">
+<a href="<?php echo base_url('pagpix');?>">
 
 <i class="fa-brands fa-pix"></i>
 <br>
@@ -45,15 +45,17 @@
 </button>
 
 <button>
+<a href="<?php echo base_url('pagdebito');?>">
 <i class="fa-solid fa-credit-card"></i>
   <br>
   <br>
   Débito
+  </a>
 </button>
 
 
 <button>
-<a href="<?php echo base_url('extrato');?>">
+<a href="<?php echo base_url('pagboleto');?>">
 <i class="fa-solid fa-money-check-dollar"></i>
 <br>
 <br>

@@ -23,6 +23,34 @@ class ExtratoModel extends Model {
     }
 
     
+    public function getTotalC($username = null){
+    //   if ($username == null){
+
+    //       return $this->findAll();
+    //   }
+
+        $this->select('id, sum(extrato.valor) as total, extrato.tipo, conta, conta.numero as numero, tipopagamento, descricao, data');
+        $this->join('conta', 'conta.numero = extrato.conta', 'left');
+        $this->groupBy('conta.numero'); // Produces: GROUP BY title
+
+      return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => "Corrente"])->first();
+  }
+
+
+      public function getTotalP($username = null){
+    //   if ($username == null){
+
+    //       return $this->findAll();
+    //   }
+
+        $this->select('id, sum(extrato.valor) as total, extrato.tipo, conta, conta.numero as numero, tipopagamento, descricao, data');
+        $this->join('conta', 'conta.numero = extrato.conta', 'left');
+        $this->groupBy('conta.numero'); // Produces: GROUP BY title
+
+      return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => "Poupança"])->first();
+  }
+
+
     public function getData2($username = null){
       if ($username == null){
 
@@ -33,25 +61,21 @@ class ExtratoModel extends Model {
           $this->join('conta', 'conta.numero = extrato.conta', 'left');
                       $this->orderBy('data', 'desc'); // Produces: GROUP BY title
 
-      return $this->asArray()->where(['conta.username' => $username])->findAll();
+      return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => 'Corrente'])->findAll();
   }
 
-      public function getData3($id = null){
-        if ($id == null){
-            $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
-            // $this->distinct('produtos.console as consoless');
-            // $this->db->distinct();
-            $this->where('console is not null');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-            $this->groupBy('console'); // Produces: GROUP BY title
+      public function getData3($username = null){
 
-            return $this->findAll();
-        }
 
-          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.id as idc, categorias.nome as nomec');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-        return $this->asArray()->where(['produtos.id' => $id])->first();
-    }
+        $this->select('id, extrato.valor, sum(extrato.valor) as total, extrato.tipo, conta, tipopagamento, descricao, data');
+          $this->join('conta', 'conta.numero = extrato.conta', 'left');
+                  $this->groupBy('extrato.data'); // Produces: GROUP BY title
+
+                      $this->orderBy('data', 'desc'); // Produces: GROUP BY title
+
+      return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => 'Poupança'])->findAll();
+  }
+
 
     public function getData4($string = null){
 
@@ -65,6 +89,22 @@ class ExtratoModel extends Model {
             $this->orderBy('qnt', $string);
         return $this->findAll();
     }
+
+    public function insertcontac($dataDepositoInicial)
+    {            
+        
+        return $this->insert($dataDepositoInicial);
+    }
+
+        public function insertcontap($dataDepositoInicial2)
+    {            
+        
+        return $this->insert($dataDepositoInicial2);
+    }
+
+
+
+
 
         public function getData5($string = null){
 
