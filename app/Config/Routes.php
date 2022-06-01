@@ -40,9 +40,13 @@ $routes->add('loginuser','Home::loginUser');
 $routes->add('logout','Home::logout');
 $routes->add('extrato','Home::extrato');
 $routes->add('pagamentos','Home::pagamentos');
+
 $routes->add('pagboleto','Home::pagboleto');
 $routes->add('pagdebito','Home::pagdebito');
 $routes->add('pagpix','Home::pagpix');
+
+$routes->add('poupanca','Home::poupanca');
+
 $routes->add('insertpagamento','Home::insertpagamento');
 
 

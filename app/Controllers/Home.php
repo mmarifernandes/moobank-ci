@@ -121,6 +121,25 @@ class Home extends BaseController
 
 
 
+		public function poupanca()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$extrato_model = new ExtratoModel();
+
+
+		$data['extrato'] = $extrato_model->getData2($data['username']);
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('poupanca', $data);
+		// echo view ('common/footer');
+	}
+
+
+
+
 			public function login()
 	{
 		// echo view ('common/headerUser');
@@ -163,8 +182,8 @@ class Home extends BaseController
 				'username' => $this->request->getVar('username'),
 				'nome' => $this->request->getVar('nome'),
 				'senha' => md5($this->request->getVar('senha')),
-				'valor' => $this->request->getVar('deposito'),
 			);
+			
 
 			$data2 = array(
 				'numero' => $numeros['poupanca'],

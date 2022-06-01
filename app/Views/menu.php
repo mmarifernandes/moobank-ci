@@ -42,10 +42,14 @@
   </button>
 
   <button>
+    <a href="<?php echo base_url('poupanca');?>">
+
     <i class="fa-solid fa-sack-dollar"></i>
     <br>
     <br>
     Poupança
+        </a>
+
   </button>
 
 

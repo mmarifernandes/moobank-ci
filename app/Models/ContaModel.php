@@ -43,10 +43,10 @@ class ContaModel extends Model {
 
 
 
-    public function insertcontac($data)
+    public function insertcontac($dataconta)
     {            
         
-        return $this->insert($data);
+        return $this->insert($dataconta);
     }
 
         public function insertcontap($data2)
