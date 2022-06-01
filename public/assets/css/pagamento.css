@@ -67,9 +67,19 @@ a{
       padding: 15px;
       padding-left: 25px;
             padding-right: 25px;
-
+    cursor: pointer;
       font-weight: bold;
 }
+
+.alert{
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid rgb(175, 3, 3);
+    background-color: #fad2d2;
+    padding: 20px;
+    color:rgb(196, 0, 0)
+}
+
 
 .botao1 input {
     margin-top: 1.2vw;

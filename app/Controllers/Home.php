@@ -13,7 +13,7 @@ class Home extends BaseController
 	public function index()
 
 	{   
-		return redirect()->to(base_url('home'));
+		return redirect()->to(base_url('login'));
 	}
 
 
@@ -49,7 +49,7 @@ class Home extends BaseController
 		// echo view ('common/headerUser');
 		$data = $this->session->get();
 		$conta_model = new ContaModel();
-		$data['tipo'] = 'debito';
+		$data['tipo'] = 'Débito';
 		$data['contac'] = $conta_model->getDataC($data['username']);
 
 		echo view ('pagamentosdados', $data);
@@ -61,7 +61,7 @@ class Home extends BaseController
 		// echo view ('common/headerUser');
 		$data = $this->session->get();
 		$conta_model = new ContaModel();
-		$data['tipo'] = 'pix';
+		$data['tipo'] = 'Pix';
 		$data['contac'] = $conta_model->getDataC($data['username']);
 
 		echo view ('pagamentosdados', $data);
@@ -75,7 +75,7 @@ class Home extends BaseController
 		// echo view ('common/headerUser');
 		$data = $this->session->get();
 		$conta_model = new ContaModel();
-		$data['tipo'] = 'boleto';
+		$data['tipo'] = 'Boleto';
 		$data['contac'] = $conta_model->getDataC($data['username']);
 
 		echo view ('pagamentosdados', $data);
@@ -136,592 +136,6 @@ class Home extends BaseController
 		// echo view ('common/footer');
 
 	}
-
-		public function registrationproduto()
-	{
-		echo view ('common/headerUser');
-		echo view ('formRegisterProduct');
-		echo view ('common/footer');
-
-	}
-
-
-			public function registrationgames()
-	{
-
-
-			$conta_model = new ContaModel();
-        $data_categories = $conta_model->getData();
-        $data_all['categories'] = $data_categories;
-
-		echo view ('common/headerUser');
-		echo view ('formRegisterGame', $data_all);
-		echo view ('common/footer');
-
-	}
-
-	public function clientesview()
-	{
-		$usuarios_model = new UsuariosModel();
-        $data_customers = $usuarios_model->getData();
-        $data_all['customers'] = $data_customers;
-
-		echo view ('common/headerUser');
-		echo view ('clientesView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-	public function ordersview()
-	{
-
-        $usuarios_model = new UsuariosModel();
-		$orders_model = new OrdersModel();
-        $data_customers = $usuarios_model->getData2();
-        $data_orders = $orders_model->getData();
-        $orders_model2 = new OrdersModel();
-        $data_orders2 = $orders_model2->getTotal();
-
-        $data_all['customers'] = $data_customers;
-        $data_all['orders'] = $data_orders;
-		$data_all['total'] = $data_orders2;
-
-
-		echo view ('common/headerUser');
-		echo view ('ordersView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-		public function productsview()
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData();
-        $data_all['products'] = $data_products;
-		echo view ('common/headerUser');
-		echo view ('productsView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-		public function gamesview()
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData();
-        $data_all['products'] = $data_products;
-
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data_all['categorias'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data_all['consoles'] = $result;
-
-
-		echo view ('common/headerUser');
-		echo view ('gamesView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-		public function categoriesview()
-	{
-		$conta_model = new ContaModel();
-        $data_categories = $conta_model->getData();
-        $data_all['categories'] = $data_categories;
-
-		echo view ('common/headerUser');
-		echo view ('categoriesView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-	public function insertOrder(){
-		$usuarios_model = new UsuariosModel();
-		$result = $usuarios_model->getData();
-		$data['customers'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result2 = $auditoria_model->getData();
-		$data['products'] = $result2;
-		echo view ('common/headerUser');
-		echo view ('insertOrderView', $data);
-		echo view ('common/footer');
-	}
-
-	public function editOrder($idorder){
-		$orders_model = new OrdersModel();
-		$result = $orders_model->getData($idorder);
-		$data['orders'] = $result;
-		
-		echo view ('common/headerUser');
-		echo view ('editOrderView',$data);
-		echo view ('common/footer');
-	}
-
-
-	public function editOrderToDB($idorder){
-
-		$orders_model = new OrdersModel();
-		$auditoria_model = new AuditoriaModel();
-
-			$data = array(
-
-				'email' => $this->request->getVar('customerIDform'),
-				'quantidade' => $this->request->getVar('qnt'),
-				'idproduto' => $this->request->getVar('idproduto'),
-
-			);
-
-
-				if($auditoria_model->verificar($data) !== false){
-				$result = $orders_model->update_order($idorder, $data);
-				$auditoria_model->update_quantidade($data);
-			}else{
-			return redirect()->to('error');
-			}
-			
- 			return redirect()->to(base_url('home'));
-
-
-	}
-
-		public function quantidade($string)
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData4($string);
-        $data_all['products'] = $data_products;
-		echo view ('common/headerUser');
-		echo view ('productsView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-			public function preco($string)
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData5($string);
-        $data_all['products'] = $data_products;
-		echo view ('common/headerUser');
-		echo view ('productsView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-			public function quantidadeg($string)
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData4($string);
-        $data_all['products'] = $data_products;
-
-
-		
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data_all['categorias'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data_all['consoles'] = $result;
-
-
-		echo view ('common/headerUser');
-		echo view ('gamesView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-
-			public function precog($string)
-	{
-		$auditoria_model = new AuditoriaModel();
-        $data_products = $auditoria_model->getData5($string);
-        $data_all['products'] = $data_products;
-
-
-		
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data_all['categorias'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data_all['consoles'] = $result;
-
-
-		echo view ('common/headerUser');
-		echo view ('gamesView', $data_all);
-		echo view ('common/footer');
-
-	}
-
-	
-
-
-	public function editCliente($email){
-		$usuarios_model = new UsuariosModel();
-		$result = $usuarios_model->getData($email);
-		$data['clientes'] = $result;
-
-		
-		echo view ('common/headerUser');
-		echo view ('editClienteView',$data);
-		echo view ('common/footer');
-	}
-
-
-	public function editClienteToDB($email){
-
-		$usuarios_model = new UsuariosModel();
-
-			$data = array(
-
-				'email' => $this->request->getVar('email'),
-				'nome' => $this->request->getVar('nome'),
-				'cidade' => $this->request->getVar('cidade'),
-				'emailantigo' => $this->request->getVar('customerIDform'),
-
-
-			);
-
-			$result = $usuarios_model->update_customer($email, $data);
-			
- 			return redirect()->to(base_url('home'));
-
-
-	}
-
-
-	public function searchProduct($string){
-		$auditoria_model = new AuditoriaModel();
-
-		
-        $string = $this->request->getVar('search');
-		$result = $auditoria_model->getData2($string);
-		$data['products'] = $result;
-
-		
-		echo view ('common/headerUser');
-		echo view ('productsView',$data);
-		echo view ('common/footer');
-	}
-
-
-		public function searchGames($string){
-		$auditoria_model = new AuditoriaModel();
-
-		
-        $string = $this->request->getVar('search');
-		$result = $auditoria_model->getData2($string);
-		$data['products'] = $result;
-
-		
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data['categorias'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data['consoles'] = $result;
-
-
-		
-		echo view ('common/headerUser');
-		echo view ('gamesView',$data);
-		echo view ('common/footer');
-	}
-
-
-		public function categorysearch($id){
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getCategory($id);
-		$data['products'] = $result;
-
-
-		
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data['categorias'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data['consoles'] = $result;
-
-		
-		
-		echo view ('common/headerUser');
-		echo view ('gamesView',$data);
-		echo view ('common/footer');
-	}
-
-
-		public function consolesearch($string){
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getConsole($string);
-		$data['products'] = $result;
-
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData3();
-		$data['consoles'] = $result;
-
-		
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data['categorias'] = $result;
-		echo view ('common/headerUser');
-		echo view ('gamesView',$data);
-		echo view ('common/footer');
-	}
-
-
-	
-	public function editProduto($id){
-		$auditoria_model = new AuditoriaModel();
-		$result = $auditoria_model->getData($id);
-		$data['produtos'] = $result;
-
-
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData();
-		$data['categorias'] = $result;
-
-
-		
-		echo view ('common/headerUser');
-		echo view ('editProductsView',$data);
-		echo view ('common/footer');
-	}
-
-
-	public function editProdutoToDB($id){
-
-		$auditoria_model = new AuditoriaModel();
-
-			$data = array(
-
-				'nome' => $this->request->getVar('nome'),
-				'tipo' => $this->request->getVar('tipo'),
-				'qnt' => $this->request->getVar('qnt'),
-				'preco' => $this->request->getVar('preco'),
-				'categoria' => $this->request->getVar('categoria'),
-				'imagem' => $this->request->getVar('imagem'),
-
-
-
-			);
-
-			$result = $auditoria_model->update_product($id, $data);
-			
-			return redirect()->to(base_url('home'));
-		
-
-	}
-
-
-
-	
-	public function editCategoria($id){
-		$conta_model = new ContaModel();
-		$result = $conta_model->getData($id);
-		$data['categorias'] = $result;
-
-		
-		echo view ('common/headerUser');
-		echo view ('editCategoriesView',$data);
-		echo view ('common/footer');
-	}
-
-
-	public function editCategoriaToDB($id){
-
-		$conta_model = new ContaModel();
-
-			$data = array(
-
-				'nome' => $this->request->getVar('nome'),
-
-			);
-
-			$result = $conta_model->update_categoria($id, $data);
-			
- 			return redirect()->to(base_url('home'));
-			
-
-
-	}
-
-
-	public function insertOrderToDB(){
-
-
-
-		$orders_model = new OrdersModel();
-		$auditoria_model = new AuditoriaModel();
-
-			$data = array(
-
-				'email' =>  $this->request->getVar('clientes'),
-				'idproduto' => $this->request->getVar('produtos'),
-				'quantidade' => $this->request->getVar('qnt'),
-
-
-
-			);
-
-			if($auditoria_model->verificar($data) !== false){
-				$orders_model->insert_order($data);
-				$auditoria_model->update_quantidade($data);
-			}else{
-			return redirect()->to('error');
-			}
-
- 			return redirect()->to(base_url('home'));
-
-	}
-
-
-	public function insertProduct(){
-
-
-
-		$auditoria_model = new AuditoriaModel();
-
-			$data = array(
-
-				'id' =>  '',
-				'nome' => $this->request->getVar('nome'),
-				'tipo' => $this->request->getVar('tipo'),
-				'categoria' => $this->request->getVar('categoria'),
-				'qnt' => $this->request->getVar('qnt'),
-				'console' => $this->request->getVar('console'),
-				'preco' => $this->request->getVar('preco'),
-				'imagem' => $this->request->getVar('imagem'),
-
-			);
-			
-
-			$auditoria_model->insert_products($data);
-			return redirect()->to('/home');
-
-	}
-
-
-	public function insertCategory(){
-
-
-		$conta_model = new ContaModel();
-
-			$data = array(
-
-				'id' =>  '',
-				'nome' => $this->request->getVar('nome'),
-
-			);
-			
-			$conta_model->insert_categories($data);
-			return redirect()->to('/home');
-
-	}
-
-
-
-	public function removeOrder($idorder=null){
-		
-		if ($idorder==null){
-			return redirect()->to('home');
-		}
-
-		$orders_model = new OrdersModel();
-
-		$result = $orders_model->getData($idorder);
-
-		if ($result !=NULL){
-			$orders_model->removeOrder($result['idorder']);		
-			return redirect()->to(base_url('home'));
-			
-		}else{
-			return redirect()->to(base_url('home'));
-		}
-
-
-	} 
-
-
-
-		public function removeProduct($id=null){
-		
-		if ($id==null){
-			return redirect()->to('home');
-		}
-
-		$auditoria_model = new AuditoriaModel();
-
-		$result = $auditoria_model->getData($id);
-
-		if ($result !=NULL){
-			$auditoria_model->removeProduct($result['id']);		
-			return redirect()->to(base_url('home'));
-			
-		}else{
-			return redirect()->to(base_url('home'));
-		}
-
-
-	} 
-
-
-
-
-			public function removeCliente($email=null){
-		
-		if ($email==null){
-			return redirect()->to('home');
-		}
-
-		$usuarios_model = new UsuariosModel();
-
-		$result = $usuarios_model->getData($email);
-
-		if ($result !=NULL){
-			$usuarios_model->removeCustomer($result['Email']);		
-			return redirect()->to(base_url('home'));
-			
-		}else{
-			return redirect()->to(base_url('home'));
-		}
-
-
-	} 
-
-
-		public function removeCategoria($id=null){
-		
-		if ($id==null){
-			return redirect()->to('home');
-		}
-
-		$conta_model = new ContaModel();
-
-		$result = $conta_model->getData($id);
-
-		if ($result !=NULL){
-			$conta_model->removeCategory($result['id']);		
-			return redirect()->to(base_url('home'));
-			
-		}else{
-			return redirect()->to(base_url('home'));
-		}
-
-
-	} 
-
 
 	public function registration(){
 
@@ -795,6 +209,46 @@ class Home extends BaseController
 
 		
 	}
+
+
+
+
+
+public function insertpagamento(){
+
+		$date =  date('Y-m-d H:i:s');
+		$extrato_model = new ExtratoModel();
+		$uri = previous_url();
+		print_r($uri);
+		$user = $this->session->get();
+			$data = array(
+				'tipo' => 'Pagamento',
+				'valor' => '-'.$this->request->getVar('valor'),
+				'conta' => $this->request->getVar('conta'),
+				'tipopagamento' => $this->request->getVar('tipo'),
+				'descricao' => $this->request->getVar('descricao'),
+				'data' => $date,
+			);
+
+			$total = $extrato_model->getTotalC($user['username']);
+			if($total['total'] < substr($data['valor'], 1)){
+				$this->session->setFlashdata('messageFail',' Saldo insuficiente!' );
+			return redirect()->to($uri);
+			}else{
+				
+				$extrato_model->insertpagamento($data);
+
+			// $this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
+
+			return redirect()->to('/menu');
+			}
+
+		
+	}
+
+
+
+
 
 	public function loginUser(){
 		

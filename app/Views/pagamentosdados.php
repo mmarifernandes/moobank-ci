@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/pagamento.css')?>">
+
 <script src="https://kit.fontawesome.com/84a7caccb6.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
@@ -35,16 +36,44 @@
 </div>
 
 <div>
-<h3><?php echo $tipo === 'debito' ? 'Débito' : null ?></h3>
-<h3><?php echo $tipo === 'pix' ? 'Pix' : null ?></h3>
-<h3><?php echo $tipo === 'boleto' ? 'Boleto' : null ?></h3>
+<h3><?php echo $tipo?></h3>
 </div>
 
 
+<form action="insertpagamento" method="post">
+
+
+
+<?php
+    echo'<input type="hidden" value="'.$contac['numero'].'" name="conta">';
+    echo'<input type="hidden" value="'.$tipo.'" name="tipo">';
+
+?>
+  <?php
+    if (session()->get('messageROk')){
+        ?>
+        <div class="alert alert-info" role="alert">
+        
+                <?php echo "<strong>". session()->getFlashdata('messageOk')."</strong>"; ?>
+        </div>
+    <?php
+    }
+    ?>
+
+    <?php
+    if (session()->get('messageFail')){
+        ?>
+        <div class="alert" role="alert">
+        
+                <?php echo "<strong>". session()->getFlashdata('messageFail')."</strong>"; ?>
+        </div>
+    <?php
+    }
+    ?> 
 <div class="left">
 <div class="botao1">
 <label for="valor">Valor:</label>
-  <input type="number" name="valor" id="valor">
+  <input type="number" name="valor" step=".01" id="valor" required>
 </div>
 
 <div class="botao2">
@@ -57,12 +86,14 @@
   <p>Descrição:</p>
   <textarea name="descricao" id="descricao" cols="40" rows="7"></textarea>
   </div>
+
+  
 </div>
 <br>
 <br>
 <br>
+<p style="color: #f4f4f4">.</p>
 <div class="confirmar">
-  <form action="">
   <button type="submit">Confirmar</button>
   </form>
 </div>

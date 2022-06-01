@@ -56,23 +56,23 @@ body{
               <!-- Sign In Form -->
               <form action="registration" method="post">
                  <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nome" name="nome" placeholder="johndoe123">
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="johndoe123" required>
                   <label for="floatingInput">Nome completo</label>
                 </div>
                  <div class="form-floating mb-3">
-                  <input type="number" class="form-control" id="deposito" name="deposito" placeholder="johndoe123">
+                  <input type="number" class="form-control" id="deposito" step=".01" name="deposito" placeholder="johndoe123" required>
                   <label for="floatingInput">Depósito inicial</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="username" name="username" placeholder="johndoe123">
+                  <input type="text" class="form-control" id="username" name="username" placeholder="johndoe123" required>
                   <label for="floatingInput">Username</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                   <label for="floatingPassword">Criar senha</label>
                 </div>
                    <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="senha" name="senha" placeholder="Password">
+                  <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
                   <label for="floatingPassword">Confirme a senha</label>
                 </div>
 

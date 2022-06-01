@@ -59,7 +59,7 @@ class ExtratoModel extends Model {
 
         $this->select('id, extrato.valor, extrato.tipo, conta, tipopagamento, descricao, data');
           $this->join('conta', 'conta.numero = extrato.conta', 'left');
-                      $this->orderBy('data', 'desc'); // Produces: GROUP BY title
+                      $this->orderBy('data', 'asc'); // Produces: GROUP BY title
 
       return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => 'Corrente'])->findAll();
   }
@@ -71,7 +71,7 @@ class ExtratoModel extends Model {
           $this->join('conta', 'conta.numero = extrato.conta', 'left');
                   $this->groupBy('extrato.data'); // Produces: GROUP BY title
 
-                      $this->orderBy('data', 'desc'); // Produces: GROUP BY title
+                      $this->orderBy('data', 'asc'); // Produces: GROUP BY title
 
       return $this->asArray()->where(['conta.username' => $username, 'conta.tipo' => 'Poupança'])->findAll();
   }
@@ -100,6 +100,13 @@ class ExtratoModel extends Model {
     {            
         
         return $this->insert($dataDepositoInicial2);
+    }
+
+
+            public function insertpagamento($data)
+    {            
+        
+        return $this->insert($data);
     }
 
 

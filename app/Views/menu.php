@@ -116,7 +116,7 @@
       echo '<td>'.$item['id'].'</td>';
       echo '<td>'.$item['tipopagamento'].'</td>';
       echo '<td>'.$item['descricao'].'</td>';
-      echo '<td>R$'.$item['valor'].'</td></tr>';
+      echo '<td>'.$item['valor'].'</td></tr>';
       
     }
     ?>

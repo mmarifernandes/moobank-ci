@@ -66,10 +66,10 @@
 <tr>
     <td></td><td></td><td></td>
 
-  <td>
+  <td style="font-weight: bold">
     SALDO
   </td>
-  <td>R$<?php echo $contac['total']?>  </td>
+  <td style="font-weight: bold">R$<?php echo $contac['total']?>  </td>
 </tr>
   </tbody>
 </table> 
@@ -105,16 +105,16 @@
       echo '<td>'.$item['id'].'</td>';
       echo '<td>'.$item['tipopagamento'].'</td>';
       echo '<td>'.$item['descricao'].'</td>';
-      echo '<td>R$'.$item['valor'].'</td></tr>';
+      echo '<td>'.$item['valor'].'</td></tr>';
       
     }
     ?>
 <tr>
   <td></td><td></td><td></td>
-  <td>
+  <td style="font-weight: bold">
     SALDO
   </td>
-  <td>R$<?php echo $contap['total']?>  </td>
+  <td style="font-weight: bold">R$<?php echo $contap['total']?>  </td>
 </tr>
   </tbody>
 </table> 
