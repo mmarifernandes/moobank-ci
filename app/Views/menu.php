@@ -65,9 +65,11 @@
 
 <div class="transfer">
   <button>
+    <a href="<?php echo base_url('transferencia');?>">
     <i class="fa-solid fa-money-bill-transfer"></i>
     <br>
     Transferência
+    </a>
   </button>
 </div>
 <div class="co">

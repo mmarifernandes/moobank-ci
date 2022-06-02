@@ -38,16 +38,23 @@ $routes->add('login', 'Home::login');
 $routes->add('signup', 'Home::signup');
 $routes->add('loginuser','Home::loginUser');
 $routes->add('logout','Home::logout');
-$routes->add('extrato','Home::extrato');
-$routes->add('pagamentos','Home::pagamentos');
 
+$routes->add('extrato','Home::extrato');
+
+$routes->add('pagamentos','Home::pagamentos');
 $routes->add('pagboleto','Home::pagboleto');
 $routes->add('pagdebito','Home::pagdebito');
 $routes->add('pagpix','Home::pagpix');
+$routes->add('insertpagamento','Home::insertpagamento');
 
 $routes->add('poupanca','Home::poupanca');
+$routes->add('aplicacao','Home::aplicacao');
+$routes->add('resgate','Home::resgate');
+$routes->add('insertresgate','Home::insertresgate');
+$routes->add('insertaplicacao','Home::insertaplicacao');
 
-$routes->add('insertpagamento','Home::insertpagamento');
+$routes->add('transferencia','Home::transferencia');
+
 
 
 

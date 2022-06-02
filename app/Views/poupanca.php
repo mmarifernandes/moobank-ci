@@ -35,7 +35,7 @@
   <div class="botao1">
 
 <button class="button1">
-<a href="<?php echo base_url('pagpix');?>">
+<a href="<?php echo base_url('aplicacao');?>">
 
 <i class="fa-solid fa-piggy-bank"></i>
 <br>
@@ -45,7 +45,7 @@
 </button>
 
 <button>
-<a href="<?php echo base_url('pagdebito');?>">
+<a href="<?php echo base_url('resgate');?>">
 <i class="fa-solid fa-circle-dollar-to-slot"></i>
   <br>
   <br>

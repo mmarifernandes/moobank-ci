@@ -70,6 +70,8 @@ class Home extends BaseController
 	}
 
 
+
+
 			public function pagboleto()
 	{
 		// echo view ('common/headerUser');
@@ -82,6 +84,49 @@ class Home extends BaseController
 		// echo view ('common/footer');
 
 	}
+
+
+			public function aplicacao()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('aplicacao', $data);
+		// echo view ('common/footer');
+
+	}
+
+
+				public function resgate()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('resgate', $data);
+		// echo view ('common/footer');
+
+	}
+
+					public function transferencia()
+	{
+		// echo view ('common/headerUser');
+		$data = $this->session->get();
+		$conta_model = new ContaModel();
+		$data['contac'] = $conta_model->getDataC($data['username']);
+		$data['contap'] = $conta_model->getDataP($data['username']);
+
+		echo view ('transferencia', $data);
+		// echo view ('common/footer');
+
+	}
+
+
 
 			public function extrato()
 	{
@@ -264,6 +309,96 @@ public function insertpagamento(){
 
 		
 	}
+
+
+
+
+
+	
+public function insertaplicacao(){
+
+		$date =  date('Y-m-d H:i:s');
+		$extrato_model = new ExtratoModel();
+		$uri = previous_url();
+		$user = $this->session->get();
+			$dataDepositoInicial = array(
+				'tipo' => 'Aplicação',
+				'valor' => '-'.$this->request->getVar('valor'),
+				'conta' => $this->request->getVar('conta'),
+				'tipopagamento' => 'Aplicação Poupança',
+				'descricao' => 'aplicação poup.',
+				'data' => $date,
+			);
+
+				$dataDepositoInicial2 = array(
+				'tipo' => 'Aplicação',
+				'valor' => $this->request->getVar('valor'),
+				'conta' => $this->request->getVar('contap'),
+				'tipopagamento' => 'Aplicação Poupança',
+				'descricao' => 'aplicação poup.',
+				'data' => $date,
+			);
+
+			$total = $extrato_model->getTotalC($user['username']);
+			if($total['total'] < substr($dataDepositoInicial['valor'], 1) || substr($dataDepositoInicial['valor'], 1) == 0){
+				$this->session->setFlashdata('messageFail',' Saldo insuficiente ou valor inserido igual a zero!' );
+			return redirect()->to($uri);
+			}else{
+				
+				$extrato_model->insertcontap($dataDepositoInicial2);
+				$extrato_model->insertcontac($dataDepositoInicial);
+
+			// $this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
+
+			return redirect()->to('/menu');
+			}
+
+		
+	}
+
+
+
+	public function insertresgate(){
+
+		$date =  date('Y-m-d H:i:s');
+		$extrato_model = new ExtratoModel();
+		$uri = previous_url();
+		$user = $this->session->get();
+			$dataDepositoInicial2 = array(
+				'tipo' => 'Resgate',
+				'valor' => '-'.$this->request->getVar('valor'),
+				'conta' => $this->request->getVar('contap'),
+				'tipopagamento' => 'Resgate Poupança',
+				'descricao' => 'resgate poup.',
+				'data' => $date,
+			);
+
+				$dataDepositoInicial = array(
+				'tipo' => 'Resgate',
+				'valor' => $this->request->getVar('valor'),
+				'conta' => $this->request->getVar('conta'),
+				'tipopagamento' => 'Resgate Poupança',
+				'descricao' => 'resgate poup.',
+				'data' => $date,
+			);
+
+			$total = $extrato_model->getTotalP($user['username']);
+			if($total['total'] < substr($dataDepositoInicial2['valor'], 1) || substr($dataDepositoInicial2['valor'], 1) == 0){
+				$this->session->setFlashdata('messageFail',' Saldo insuficiente ou valor inserido igual a zero!' );
+			return redirect()->to($uri);
+			}else{
+				
+				$extrato_model->insertcontac($dataDepositoInicial);
+				$extrato_model->insertcontap($dataDepositoInicial2);
+
+			// $this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
+
+			return redirect()->to('/menu');
+			}
+
+		
+	}
+
 
 
 

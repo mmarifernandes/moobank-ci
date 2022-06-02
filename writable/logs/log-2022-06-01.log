@@ -208,3 +208,71 @@ CRITICAL - 2022-06-01 08:34:30 --> Invalid file: poupanca.php
 #6 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
 #8 {main}
+CRITICAL - 2022-06-01 17:39:37 --> Undefined variable: tipo
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Views\aplicacao.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 49, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\Users\\Marina...')
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('aplicacao', Array, true)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(96): view('aplicacao', Array)
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->aplicacao()
+#6 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#10 {main}
+CRITICAL - 2022-06-01 18:30:55 --> Undefined variable: data
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(328): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 328, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertaplicacao()
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#6 {main}
+CRITICAL - 2022-06-01 18:51:07 --> Column 'conta' cannot be null
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Models\ExtratoModel.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(378): App\Models\ExtratoModel->insertcontac(Array)
+#9 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->insertresgate()
+#10 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#14 {main}
+CRITICAL - 2022-06-01 19:18:44 --> Undefined variable: tipo
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Views\transferencia.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 39, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\Users\\Marina...')
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('transferencia', Array, true)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(124): view('transferencia', Array)
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->transferencia()
+#6 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#10 {main}
+CRITICAL - 2022-06-01 19:19:04 --> Undefined variable: tipo
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Views\transferencia.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\Marina...', 49, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\Users\\Marina...')
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('transferencia', Array, true)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(124): view('transferencia', Array)
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->transferencia()
+#6 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#10 {main}
+CRITICAL - 2022-06-01 21:50:39 --> Undefined index: username
+#0 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\Marina...', 37, Array)
+#1 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Home->menu()
+#2 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Marina Fernandes\Desktop\codeignier 2\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Marina...')
+#6 {main}

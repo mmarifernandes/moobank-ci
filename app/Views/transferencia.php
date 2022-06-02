@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo base_url('/assets/css/pagamento.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/transfer.css')?>">
 
 <script src="https://kit.fontawesome.com/84a7caccb6.js" crossorigin="anonymous"></script>
   <title>Document</title>
@@ -30,13 +30,13 @@
 
 
 <div>
-  <a href="<?php echo base_url('pagamentos');?>">
+  <a href="<?php echo base_url('menu');?>">
   <i style="margin-left: 5%" class="fa-solid fa-arrow-left"></i>
   </a>
 </div>
 
 <div>
-<h3 style="margin-bottom: 15px"><?php echo $tipo?></h3>
+<h3 style="margin-bottom: 15px">Transferência</h3>
 </div>
 
 
@@ -46,7 +46,6 @@
 
 <?php
     echo'<input type="hidden" value="'.$contac['numero'].'" name="conta">';
-    echo'<input type="hidden" value="'.$tipo.'" name="tipo">';
 
 ?>
   <?php

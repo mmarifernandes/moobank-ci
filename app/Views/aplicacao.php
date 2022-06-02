@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo base_url('/assets/css/pagamento.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/poupanca.css')?>">
 
 <script src="https://kit.fontawesome.com/84a7caccb6.js" crossorigin="anonymous"></script>
   <title>Document</title>
@@ -30,23 +30,25 @@
 
 
 <div>
-  <a href="<?php echo base_url('pagamentos');?>">
+  <a href="<?php echo base_url('poupanca');?>">
   <i style="margin-left: 5%" class="fa-solid fa-arrow-left"></i>
   </a>
 </div>
 
 <div>
-<h3 style="margin-bottom: 15px"><?php echo $tipo?></h3>
+<h3>Aplicação</h3>
+<h4 class="desc">Aplicar um valor da conta corrente para a poupança.</h4>
 </div>
 
 
-<form action="insertpagamento" method="post">
+<form action="insertaplicacao" method="post">
 
 
 
 <?php
     echo'<input type="hidden" value="'.$contac['numero'].'" name="conta">';
-    echo'<input type="hidden" value="'.$tipo.'" name="tipo">';
+        echo'<input type="hidden" value="'.$contap['numero'].'" name="contap">';
+
 
 ?>
   <?php
@@ -70,28 +72,11 @@
     <?php
     }
     ?> 
-<div class="left">
 <div class="botao1">
 <label for="valor">Valor:</label>
   <input type="number" name="valor" step=".01" id="valor" required>
 </div>
 
-<div class="botao2">
-  </div>
-  
-</div>
-
-<div class="right">
-  <div class="container">
-  <p>Descrição:</p>
-  <textarea name="descricao" id="descricao" cols="40" rows="7"></textarea>
-  </div>
-
-  
-</div>
-<br>
-<br>
-<br>
 <p style="color: #f4f4f4">.</p>
 <div class="confirmar">
   <button type="submit">Confirmar</button>
