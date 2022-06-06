@@ -89,7 +89,7 @@ a{
 }
 
 
-.botao1 input {
+input {
     margin-top: 1.2vw;
     border-color: #f4f4f4;
     box-shadow: none;
@@ -98,6 +98,8 @@ a{
     font-size: 20px;
 
 }
+
+
 .botao1 label{
 margin-left: 1.5vw;
 margin-right: 0.5vw;
@@ -117,6 +119,23 @@ i {
     font-size: 40px;
 }
 
+.logout{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    border-radius: 9px;
+    border: none;
+    background-color: #FF428A;   
+        cursor: pointer;
+         box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+
+
+}
+.logout:hover{
+    background-color: #ec8cb1;
+    color: rgb(131, 131, 131);
+}
 
 nav h4{
     margin: 0;
@@ -170,6 +189,7 @@ body {
     padding-left: 30px;
     padding-bottom: 30px;
         margin-right: 22vw;
+        text-align: center;
 
 
 }

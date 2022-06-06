@@ -22,7 +22,7 @@
     <h4><?php echo $mysession?></h4>
     <form action="<?php echo base_url('logout');?>" method="post">
     <input type="hidden" id="username" name="username" value="<?php echo $mysessionuser ?>">
-    <button style="margin-left: 5%" type="submit">Logout</button>
+    <button class ="logout" style="margin-left: 5%" type="submit">Sair</button>
     </form>
   </nav>
   </div>
@@ -120,8 +120,8 @@
       $date = date_create($item['data']);
       echo '<tr><td>'.date_format($date,"d-m-Y").'</td>';
       echo '<td>'.$item['id'].'</td>';
-      echo '<td>'.$item['tipopagamento'].'</td>';
-      echo '<td>'.$item['descricao'].'</td>';
+      echo '<td>'.substr($item['tipopagamento'], 0, 15).'...'.'</td>';
+      echo '<td>'.substr($item['descricao'], 0, 15).'...'.'</td>';
       echo '<td>'.$item['valor'].'</td></tr>';
       
     }

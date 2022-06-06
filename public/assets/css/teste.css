@@ -16,6 +16,24 @@ html p {
 html h3 {
     margin: 0;
 }
+.logout{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    border-radius: 9px;
+    border: none;
+    background-color: #FF428A;   
+        cursor: pointer;
+         box-shadow: 4px 9px 18px -10px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.logout:hover {
+    background-color: #ec8cb1;
+    color: rgb(131, 131, 131);
+}
 
 button {
     background-color: #fff;

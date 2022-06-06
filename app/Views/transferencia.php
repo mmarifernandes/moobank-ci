@@ -23,7 +23,7 @@
     <h4><?php echo $mysession?></h4>
     <form action="<?php echo base_url('logout');?>" method="post">
     <input type="hidden" id="username" name="username" value="<?php echo $mysessionuser ?>">
-    <button style="margin-left: 5%" type="submit">Logout</button>
+    <button class ="logout" style="margin-left: 5%" type="submit">Sair</button>
     </form>
   </nav>
   </div>
@@ -40,12 +40,12 @@
 </div>
 
 
-<form action="insertpagamento" method="post">
+<form action="inserttrans" method="post">
 
 
 
 <?php
-    echo'<input type="hidden" value="'.$contac['numero'].'" name="conta">';
+    echo'<input type="hidden" value="'.$contac['numero'].'" name="conta1">';
 
 ?>
   <?php
@@ -76,6 +76,8 @@
 </div>
 
 <div class="botao2">
+  <label for="conta">Conta</label>
+  <input type="text" name="conta" required>
   </div>
   
 </div>
@@ -83,7 +85,7 @@
 <div class="right">
   <div class="container">
   <p>Descrição:</p>
-  <textarea name="descricao" id="descricao" cols="40" rows="7"></textarea>
+  <textarea name="descricao" id="descricao" cols="27%" rows="5.8%"></textarea>
   </div>
 
   

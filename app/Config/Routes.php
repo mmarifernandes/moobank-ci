@@ -54,6 +54,7 @@ $routes->add('insertresgate','Home::insertresgate');
 $routes->add('insertaplicacao','Home::insertaplicacao');
 
 $routes->add('transferencia','Home::transferencia');
+$routes->add('inserttrans','Home::inserttrans');
 
 
 

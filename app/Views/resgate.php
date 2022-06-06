@@ -23,7 +23,7 @@
     <h4><?php echo $mysession?></h4>
     <form action="<?php echo base_url('logout');?>" method="post">
     <input type="hidden" id="username" name="username" value="<?php echo $mysessionuser ?>">
-    <button style="margin-left: 5%" type="submit">Logout</button>
+    <button class ="logout" style="margin-left: 5%" type="submit">Sair</button>
     </form>
   </nav>
   </div>

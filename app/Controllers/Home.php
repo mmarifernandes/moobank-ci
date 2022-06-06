@@ -295,7 +295,7 @@ public function insertpagamento(){
 			);
 
 			$total = $extrato_model->getTotalC($user['username']);
-			if($total['total'] < substr($data['valor'], 1)){
+			if($total['total'] < substr($data['valor'], 1) || substr($data['valor'], 1) == 0){
 				$this->session->setFlashdata('messageFail',' Saldo insuficiente!' );
 			return redirect()->to($uri);
 			}else{
@@ -309,6 +309,55 @@ public function insertpagamento(){
 
 		
 	}
+
+
+
+
+
+
+
+
+public function inserttrans(){
+
+	$date =  date('Y-m-d H:i:s');
+	$extrato_model = new ExtratoModel();
+	$uri = previous_url();
+	print_r($uri);
+	$user = $this->session->get();
+		$dataDepositoInicial = array(
+			'tipo' => 'Transferência',
+			'valor' => $this->request->getVar('valor'),
+			'conta' => $this->request->getVar('conta'),
+			'tipopagamento' => 'Transferência',
+			'descricao' => $this->request->getVar('descricao'),
+			'data' => $date,
+		);
+		$dataDepositoInicial2 = array(
+			'tipo' => 'Transferência',
+			'valor' => '-'.$this->request->getVar('valor'),
+			'conta' => $this->request->getVar('conta1'),
+			'tipopagamento' => 'Transferência',
+			'descricao' => $this->request->getVar('descricao'),
+			'data' => $date,
+		);
+
+		$total = $extrato_model->getTotalC($user['username']);
+		if($total['total'] < substr($dataDepositoInicial2['valor'], 1) || substr($dataDepositoInicial2['valor'], 1) == 0){
+			$this->session->setFlashdata('messageFail',' Saldo insuficiente!' );
+		return redirect()->to($uri);
+		}else{
+			
+			$extrato_model->insertcontac($dataDepositoInicial);
+			$extrato_model->insertcontac($dataDepositoInicial2);
+
+
+		// $this->session->setFlashdata('messageRegisterOk',' Registered Successfull. Please, login.' );
+
+		return redirect()->to('/menu');
+		}
+
+	
+}
 
 
 

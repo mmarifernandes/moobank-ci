@@ -77,18 +77,18 @@ class ExtratoModel extends Model {
   }
 
 
-    public function getData4($string = null){
+    // public function getData4($string = null){
 
-        if ($string == null){
-              $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-            return $this->findAll();
-        }
-          $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
-            $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
-            $this->orderBy('qnt', $string);
-        return $this->findAll();
-    }
+    //     if ($string == null){
+    //           $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+    //         $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+    //         return $this->findAll();
+    //     }
+    //       $this->select('*, produtos.nome as nome, produtos.id as id, categorias.nome as nomec');
+    //         $this->join('categorias', 'produtos.categoria = categorias.id', 'left');
+    //         $this->orderBy('qnt', $string);
+    //     return $this->findAll();
+    // }
 
     public function insertcontac($dataDepositoInicial)
     {            

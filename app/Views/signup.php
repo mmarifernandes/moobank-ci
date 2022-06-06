@@ -27,7 +27,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
-  background-color: #0facde;
+  background-color: #3955B8;
   border-color: #fff
 }
 
@@ -51,6 +51,8 @@ body{
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
+                            <h1>Bem-vindo ao Moobank</h1>
+
               <h3 class="login-heading mb-4">Cadastre-se</h3>
 
               <!-- Sign In Form -->
